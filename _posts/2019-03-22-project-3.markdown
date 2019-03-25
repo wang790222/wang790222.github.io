@@ -1,0 +1,12 @@
+---
+layout: default
+modal-id: 3
+img: pizzaPickup.png
+alt: image-alt
+project-date: Feb 2019
+client: Hungry Customers and Restaurant Owners
+category: Food Pickup
+description: <a href="https://github.com/wang790222/ChattyApp">Pizza4Pickup</a> is for both hungry customers and restaurants, to place orders, get real-time updates. It's a full stack app with Ritual like features using Twilio for text message alerts, Node.js Express jQuery, PostgresSQL, SASS.
+
+
+---

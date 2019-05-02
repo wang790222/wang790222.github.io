@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator>
   <link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2019-04-01T21:19:16+00:00</updated>
+  <updated>2019-05-02T18:54:31+00:00</updated>
   <id>http://localhost:4000/</id>
 
   
@@ -20,8 +20,8 @@
   
   
     <entry>
-      <title type="html">Project 1</title>
-      <link href="http://localhost:4000/social%20application/2019/03/24/project-1/" rel="alternate" type="text/html" title="Project 1" />
+      <title type="html">Spotter</title>
+      <link href="http://localhost:4000/social%20application/2019/03/24/project-1/" rel="alternate" type="text/html" title="Spotter" />
       <published>2019-03-24T00:00:00+00:00</published>
       <updated>2019-03-24T00:00:00+00:00</updated>
       <id>http://localhost:4000/social%20application/2019/03/24/project-1</id>
@@ -54,8 +54,8 @@
     </entry>
   
     <entry>
-      <title type="html">Project 2</title>
-      <link href="http://localhost:4000/chat%20room/2019/03/23/project-2/" rel="alternate" type="text/html" title="Project 2" />
+      <title type="html">Chatty</title>
+      <link href="http://localhost:4000/chat%20room/2019/03/23/project-2/" rel="alternate" type="text/html" title="Chatty" />
       <published>2019-03-23T00:00:00+00:00</published>
       <updated>2019-03-23T00:00:00+00:00</updated>
       <id>http://localhost:4000/chat%20room/2019/03/23/project-2</id>
@@ -88,8 +88,8 @@
     </entry>
   
     <entry>
-      <title type="html">Project 3</title>
-      <link href="http://localhost:4000/food%20pickup/2019/03/22/project-3/" rel="alternate" type="text/html" title="Project 3" />
+      <title type="html">Pizza4Pickup</title>
+      <link href="http://localhost:4000/food%20pickup/2019/03/22/project-3/" rel="alternate" type="text/html" title="Pizza4Pickup" />
       <published>2019-03-22T00:00:00+00:00</published>
       <updated>2019-03-22T00:00:00+00:00</updated>
       <id>http://localhost:4000/food%20pickup/2019/03/22/project-3</id>
@@ -122,8 +122,8 @@
     </entry>
   
     <entry>
-      <title type="html">Project 4</title>
-      <link href="http://localhost:4000/social%20application/2019/03/21/project-4/" rel="alternate" type="text/html" title="Project 4" />
+      <title type="html">Tweeter</title>
+      <link href="http://localhost:4000/social%20application/2019/03/21/project-4/" rel="alternate" type="text/html" title="Tweeter" />
       <published>2019-03-21T00:00:00+00:00</published>
       <updated>2019-03-21T00:00:00+00:00</updated>
       <id>http://localhost:4000/social%20application/2019/03/21/project-4</id>
@@ -156,8 +156,8 @@
     </entry>
   
     <entry>
-      <title type="html">Project 5</title>
-      <link href="http://localhost:4000/tool/2019/03/20/project-5/" rel="alternate" type="text/html" title="Project 5" />
+      <title type="html">TinyApp</title>
+      <link href="http://localhost:4000/tool/2019/03/20/project-5/" rel="alternate" type="text/html" title="TinyApp" />
       <published>2019-03-20T00:00:00+00:00</published>
       <updated>2019-03-20T00:00:00+00:00</updated>
       <id>http://localhost:4000/tool/2019/03/20/project-5</id>

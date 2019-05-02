@@ -6,6 +6,8 @@ alt: image-alt
 project-date: Jan 2019
 client: Everyone
 category: Tool
-description: <a href="https://github.com/wang790222/TinyApp">TinyApp</a> is a full stack web application built with Node and Express that allows users to shorten long URLs
+title: TinyApp
+stack: Node.js Express
+description: <a href="https://github.com/wang790222/TinyApp" style="color:black;">TinyApp</a> is a full stack web application built with Node and Express that allows users to shorten long URLs.
 
 ---

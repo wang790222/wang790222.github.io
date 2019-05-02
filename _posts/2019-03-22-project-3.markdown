@@ -6,7 +6,9 @@ alt: image-alt
 project-date: Feb 2019
 client: Hungry Customers and Restaurant Owners
 category: Food Pickup
-description: <a href="https://github.com/wang790222/ChattyApp">Pizza4Pickup</a> is for both hungry customers and restaurants, to place orders, get real-time updates. It's a full stack app with Ritual like features using Twilio for text message alerts, Node.js Express jQuery, PostgresSQL, SASS.
+title: Pizza4Pickup
+stack: Node.js, Express, PostgreSQL, jQuery, AJAX, HTML, CSS, Bootstrap, twilio API
+description: <a href="https://github.com/wang790222/pizzaForPickup" style="color:black;">Pizza4Pickup</a> is a full-stack application that caters to hungry customers looking to order pizza, and a single restaurant who provides the pizzas. Users from both sides can use this app to manage the status of the orders and communicate throughout the pick up process.
 
 
 ---

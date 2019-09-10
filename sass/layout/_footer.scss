@@ -1,0 +1,44 @@
+.footer {
+  background-color: $color-grey-dark-2;
+  padding: 7rem 0;
+  font-size: 1.4rem;
+  position: relative; 
+
+  &__list-inline {
+    @include absCenter;
+    list-style: none;
+    list-style-type: none;
+    text-align: center;
+    
+    & li {
+      display:inline;
+      margin: 1rem;
+    }
+  }
+
+  &__btn-outline {
+    border: solid 2px #fff;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    position: relative;
+  }
+
+  &__btn-outline:hover, {
+      border: solid 2px #fff;
+      background: #fff;
+  }
+
+  &__btn-social {
+    display: inline-block;
+    width: 7rem;
+    height: 7rem;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    text-align: center;
+    
+  }
+
+  &__icon {
+    
+  }
+}

@@ -469,8 +469,12 @@ ion-icon {
       height: 25rem;
       float: left;
       -webkit-shape-outside: circle(50%);
-      shape-outside: circle(50%);
-      padding: 3rem; }
+      shape-outside: circle(50%); }
+      .header__content-circle-img {
+        width: 25rem;
+        height: 25rem;
+        padding: 3rem;
+        cursor: pointer; }
     .header__content-text {
       margin-top: 2rem;
       font-size: 2.5rem;
@@ -479,6 +483,27 @@ ion-icon {
       .header__content-text span:last-child {
         border-right: .05em solid;
         animation: caret 1s steps(1) infinite; }
+    .header__content-circle-back {
+      text-align: center;
+      font-size: 2rem;
+      position: absolute;
+      top: 3rem;
+      left: 3rem;
+      width: 18.8rem;
+      height: 18.8rem;
+      transform: translateX(0.1rem) translateY(0.1rem) rotate(50deg);
+      transition: all 0.5s;
+      background-color: #333;
+      float: left;
+      border-radius: 50%;
+      z-index: -2;
+      -webkit-shape-outside: circle(50%);
+      shape-outside: circle(50%); }
+      .header__content-circle-back-text {
+        padding-top: 2rem;
+        color: #fff; }
+    .header__content:hover .header__content-circle-back {
+      transform: translateX(-85%); }
 
 .row {
   max-width: 114rem;

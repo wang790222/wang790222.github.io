@@ -8,19 +8,37 @@
     z-index: 10;
     outline-offset: 2rem;
 
+    @include respond(tab-port) {
+      width: 25%;
+      margin-top: -5rem;
+    }
+
     &-p1 {
-      left: 15%;
+      left: 14%;
       top: 0;
+
+      @include respond(tab-port) {
+        left: 27.5%;
+      }
     }
 
     &-p2 {
-      left: 50%;
+      left: 51%;
       top: 0;
+
+      @include respond(tab-port) {
+        left: 47.5%;
+      }
     }
 
     &-p3 {
-      left: 35%;
-      top: 27rem;
+      left: 36%;
+      top: 25rem;
+
+      @include respond(tab-port) {
+        left: 40%;
+        top: 12.5rem;
+      }
     }
 
     &:hover {

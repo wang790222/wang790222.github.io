@@ -4,15 +4,38 @@
   font-size: 1.4rem;
   position: relative; 
 
+  @include respond(tab-port) {
+    margin-top: -12rem;
+  }
+
+  @include respond(phone) {
+    padding: 3rem 0;
+  }
+
   &__list-inline {
     @include absCenter;
     list-style: none;
     list-style-type: none;
     text-align: center;
+
+    @include respond(phone) {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: none;
+      padding-inline-start: 0;
+      :not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
     
     & li {
       display:inline;
       margin: 1rem;
+
+      @include respond(phone) {
+        margin: 0;
+      }
     }
   }
 

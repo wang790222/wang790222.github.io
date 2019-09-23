@@ -3,6 +3,18 @@
   -moz-perspective: 150rem;
   position: relative;
   height: 30rem;
+
+  @include respond(tab-port) {
+    height: 23rem;
+    width: 300px;
+    padding-bottom: 37rem;
+    transform: translateX(75px);
+  }
+
+  @include respond(phone) {
+    width: 270px;
+    transform: translateX(27px);
+  }
   
   &__side {
     height: 38rem;
@@ -26,7 +38,6 @@
       opacity: .7;
       &-1 {
         background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
-        
       }
 
       &-2 {

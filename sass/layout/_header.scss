@@ -2,11 +2,24 @@
 
   height: 95vh;
 
+  @include respond(tab-port) {
+    height: 85vh;
+  }
+
+  @include respond(phone) {
+    height: 100vh;
+  }
+
   &__background-img {
     position: relative;
     height: 100%;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+
+    @include respond(phone) {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+      clip-path: polygon(0 0, 100% 0, 100% 90vh, 0 100%);
+    }
   }
 
   &__background-img::after {
@@ -25,19 +38,39 @@
 
   &__text-box {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 28%;
     transform: translate(-50%, -50%);
+    padding-left: 5rem;
     text-align: center;
+
+    @include respond(tab-port) {
+      top: 12.5%;
+      padding-left: 12.5rem;
+    }
+
+    @include respond(phone) {
+      padding: 0;
+    }
   }
 
   &__bubble {
     position: absolute;
-    top: 32%;
-    left: 25%;
+    top: 23%;
+    left: 22%;
     width: 30rem;
     height: 30rem;
     margin: 0;
+
+    @include respond(tab-port) {
+      top: 23%;
+      left: 10%;
+    }
+
+    @include respond(phone) {
+      top: 15%;
+      left: 12%;
+    }
 
     &-1 {
       position: absolute;
@@ -48,6 +81,17 @@
       padding: 1rem 1.1rem;
       text-align: center;
       animation: bubble-1 3s 3s infinite;
+
+      @include respond(tab-port) {
+        left: 80%;
+        top: 1.4%;
+        padding: .5rem 2.5rem;
+      }
+
+      @include respond(tab-port) {
+        top: 3%;
+        left: 67%;
+      }
     }
 
     &-2 {
@@ -58,6 +102,15 @@
       border-radius: 50%;
       padding: 1rem 1.1rem;
       animation: bubble-2 3s 2s infinite;
+
+      @include respond(tab-port) {
+        left: 65%;
+      }
+
+      @include respond(tab-port) {
+        top: 16%;
+        left: 52%;
+      }
     }
 
     &-3 {
@@ -68,14 +121,31 @@
       border-radius: 50%;
       padding: .5rem .5rem;
       animation: bubble-3 3s 1s infinite;
+
+      @include respond(tab-port) {
+        top:25%;
+        left: 45%;
+      }
     }
   }
 
   &__content {
     position: absolute;
     width: 55%;
-    top: 43%;
-    left: 34%;
+    top: 35%;
+    left: 30%;
+
+    @include respond(tab-port) {
+      top: 35%;
+      left: 12%;
+      width: 77.5%;
+    }
+
+    @include respond(phone) {
+      top: 25%;
+      left: 10%;
+      width: 90%;
+    }
     
     &-circle {
       width: 25rem;
@@ -83,20 +153,50 @@
       float: left;
       -webkit-shape-outside: circle(50%);
       shape-outside: circle(50%);
-      
+
+      @include respond(phone) {
+        float: none;
+        height: 20rem;
+      }
+
       &-img {
         width:25rem;
         height: 25rem;        
         padding: 3rem;
         cursor: pointer;
+        
+
+        @include respond(tab-port) {
+          width: 23rem;
+          height: 23rem;
+          padding: 2rem;
+        }
+
+        @include respond(phone) {
+          width: 20rem;
+          height: 20rem;
+          padding: 1.5rem;
+        }
       }
     }
 
     &-text {
       margin-top: 2rem;
-      font-size: 2.5rem;
-      letter-spacing: .15rem;
+      font-size: 2.3rem;
+      letter-spacing: .025rem;
       color: $color-grey-dark-2;
+
+      @include respond(tab-port) {
+        letter-spacing: .05rem;
+      }
+
+      @include respond(phone) {
+        text-align: center;
+        letter-spacing: 0;
+        color: black;
+        font-weight: 550;
+        margin-top: .8rem;
+      }
       
       span:last-child {
         border-right: .05em solid;
@@ -120,6 +220,22 @@
       z-index: -2;
       -webkit-shape-outside: circle(50%);
       shape-outside: circle(50%);
+
+      @include respond(tab-port) {
+        top: 2.3rem;
+        left: 2.3rem;
+        width: 18.5rem;
+        height: 18.5rem;
+        transform: translateX(.1rem) translateY(.1rem);
+      }
+
+      @include respond(phone) {
+        top: 1.5rem;
+        left: 1.3rem;
+        width: 16.5rem;
+        height: 16.5rem;
+        margin-left: .5rem;
+      }
       
       &-text {
         padding-top: 2rem;
@@ -129,6 +245,18 @@
 
     &:hover &-circle-back {
       transform: translateX(-85%);
+
+      @include respond(tab-port) {
+        transform: translateY(95%);
+      }
+
+      @include respond(phone) {
+        transform: translateX(85%);
+      }
     }
   }
+}
+
+#self-introduction {
+  padding-right: 5rem;
 }

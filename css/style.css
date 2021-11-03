@@ -81,7 +81,6 @@ body {
 
 .heading-primary {
   color: #555;
-  text-transform: uppercase;
   text-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
   .heading-primary--main {
     font-size: 5rem;
@@ -221,19 +220,24 @@ ion-icon {
         margin-top: -5rem; } }
     .composition__photo-p1 {
       left: 14%;
-      top: 0; }
+      top: -2rem; }
       @media (max-width: 56.25em) {
         .composition__photo-p1 {
           left: 27.5%; } }
     .composition__photo-p2 {
       left: 51%;
-      top: 0; }
+      top: -2rem; }
       @media (max-width: 56.25em) {
         .composition__photo-p2 {
           left: 47.5%; } }
     .composition__photo-p3 {
       left: 36%;
-      top: 25rem; }
+      top: 23rem; }
+    .composition__photo-p4 {
+        left: 40%;
+        width: 190px;
+        top: -1rem;
+         }
       @media (max-width: 56.25em) {
         .composition__photo-p3 {
           left: 40%;
@@ -245,7 +249,7 @@ ion-icon {
     transform: scale(0.95); }
 
 .project-grid {
-  padding: 8rem 5rem 5rem 5rem;
+  padding: 0rem 7rem 5rem 7rem;
   display: grid;
   width: 100%;
   grid-template-columns: repeat(auto-fill, minmax(40rem, 1fr));
@@ -258,7 +262,6 @@ ion-icon {
     .project-grid {
       padding-top: 7rem; } }
   .project-grid__card {
-    width: 80%;
     margin: 0 auto; }
     .project-grid__card-1 {
       grid-row-end: span 4; }
@@ -306,7 +309,8 @@ ion-icon {
         .project-grid__card-img {
           max-width: 360px; } }
       .project-grid__card-img-1 {
-        float: right; }
+        float: right;
+      height: 375px; }
       .project-grid__card-img-2 {
         float: right; }
       .project-grid__card-img-3 {
@@ -320,7 +324,9 @@ ion-icon {
     position: relative; }
   .project-grid__caption {
     position: absolute;
-    top: 10%;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0 auto;
     text-transform: uppercase;
     color: #fff;
@@ -328,6 +334,7 @@ ion-icon {
     text-align: center;
     opacity: 0;
     transition: all .5s;
+    cursor: pointer;
     backface-visibility: hidden; }
     .project-grid__caption-item {
       display: inline-block;
@@ -686,8 +693,7 @@ ion-icon {
       .header__content-circle-img {
         width: 25rem;
         height: 25rem;
-        padding: 3rem;
-        cursor: pointer; }
+        padding: 3rem; }
         @media (max-width: 56.25em) {
           .header__content-circle-img {
             width: 23rem;
@@ -986,7 +992,7 @@ ion-icon {
 .section-projects__background-img {
   position: relative;
   height: 100%;
-  padding: 12rem 0 5rem 0; }
+  padding: 12rem 0 18rem 0; }
   @media (max-width: 37.5em) {
     .section-projects__background-img {
       padding: 10rem 0 .5rem 0; } }

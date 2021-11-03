@@ -35,9 +35,6 @@
           <li class="navigation__item">
             <a href="#projects" class="navigation__link">Projects</a>
           </li>
-          <li class="navigation__item">
-            <a href="#education" class="navigation__link">Education</a>
-          </li>
           <script type="text/javascript">
             const setCheckBoxUnchecked = () => {
               $('#navi-toggle').prop('checked', false);
@@ -54,35 +51,23 @@
       <div class="header__background-img">
         <div class="header__text-box">
           <h1 class="heading-primary">
-            <div class="heading-primary--main">Eddie, Wang</div>
-            <div class="heading-primary--sub">Frontend Developer</div>
+            <div class="heading-primary--main">hello! i'm eddie</div>
+            <div class="heading-primary--sub">Front-end Developer</div>
           </h1>
-        </div>
-        <div class="header__bubble">
-          <div class="header__bubble-1">Click Me!</div>
-          <div class="header__bubble-2"></div>
-          <div class="header__bubble-3"></div>
         </div>
         <div class="header__content">
           <div class="header__content-circle">
-            <p>
-              <a href="https://wang790222.github.io/My-Album/" target="_blank">
-                <img src="img/me.png" alt="My Avatar" class="header__content-circle-img">
-              </a>
-            </p>
-          </div>
-          <div class="header__content-circle-back">
-            <div class="header__content-circle-back-text">
-              <p><b>Hobby:</b></p>
-              <p>Travelling</p>
-              <p><I><u>Photography</u></I></p>
-              <p>Work Out</p>
-            </div>
+            <img src="img/me.png" alt="My Avatar" class="header__content-circle-img">
           </div>
           <div class="header__content-text">
             <p id="self-introduction"></p>
             <script type="text/javascript">
-              let content = 'Developer with a background in computer science and two years of experience as a software engineer in Garmin Taiwan. A problem-solver and fast learner. Now pursuing an opportunity of Frontend/React Developer in Toronto.';
+                                                                                                                                                                                                                                                                                                                                                                      let content = 'Developer with a background in computer science \
+                and two years of experience as a \
+                software engineer in Garmin Taiwan, \
+                and 2+ years of experience as a \
+                front-end developer at Wealthscope in Toronto. \
+                A problem-solver and fast learner.';
 
               let ele = '<span>' + content.split('').join('</span><span>') + '</span>';
               $(ele).hide().appendTo('#self-introduction').each(function (i) {
@@ -105,196 +90,80 @@
         </div>
         <div class="row">
           <div class="col-1-of-2">
-            <h3 class="heading-tertiary u-margin-bottom-small">SOFTWARE ENGINEER – GARMIN CORP (2016 – 2018)</h3>
-            <p class="paragraph">Worked in close collaboration with the project team and provided support for the front-end development and UI / UX design initiatives for Connected service / API / Web application project. Held concurrent responsibility for discussing requirements with users, planning user experience, updating knowledge of technology trends, and listening to user feedback.</p>
-            <ul class="paragraph__ul">
-              <li>Improved code design, readability, and performance by writing reusable codes and performing code review and refactoring.</li>
-              <li>Designed, developed, and implemented an application for Garmin Connect IQ</li>
-            </ul>
-          </div>
-          <div class="col-1-of-2">
-            <div class="composition">
-              <img src="img/windandwave.png" alt="Photo 1" class="composition__photo composition__photo-p1">
-              <img src="img/garminair.png" alt="Photo 2" class="composition__photo composition__photo-p2">
-              <img src="img/garmin.png" alt="Photo 3" class="composition__photo composition__photo-p3">
+            <h3 class="heading-tertiary u-margin-bottom-small">Software engineer @ Garmin Corp (2016–2018)</h3>
+            <p class="paragraph">Worked in close collaboration with the project team and provided support for the front-end
+              development and UI / UX design initiatives for Connected service / API / Web application project. Held concurrent
+              responsibility for discussing requirements with users, planning user experience, updating knowledge of technology
+              trends, and listening to user feedback.</p>
             </div>
-          </div>
+            <div class="col-1-of-2">
+              <div class="composition">
+                <img src="img/windandwave.png" alt="Photo 1" class="composition__photo composition__photo-p1" />
+                <img src="img/garminair.png" alt="Photo 2" class="composition__photo composition__photo-p2" />
+                <img src="img/garmin.png" alt="Photo 3" class="composition__photo composition__photo-p3" />
+                </div>
+                </div>
+                </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-1-of-2">
+                    <h3 class="heading-tertiary u-margin-bottom-small">Front-end developer @ Wealthscope (2019-Present)</h3>
+                    <p class="paragraph">Builds frontend infrastructure in React/Redux, leads frontend aspect of technical integrations
+                      Responsible for user experience, user interface, and design. Translating UX concepts into code, developing new
+                      user features, and optimizing the web development process
+                      Ensured code stability by performing code reviews and refactoring
+                    </p>
+            </div>
+            <div class="col-1-of-2">
+              <div class="composition">
+                <img src="img/ws.png" class="composition__photo composition__photo-p4" />
+            </div>
         </div>
       </section>
       <section class="section-projects" id="projects">
         <div class="section-projects__background-img">
         <div class="u-center-text u-margin-bottom-large">
           <h2 class="heading-secondary">Projects</h2>
-        </divdiv>
+        </div>
         <div class="project-grid">
           <div class="project-grid__card project-grid__card-1">
             <figure class="project-grid__shape">
-              <img src="/img/pizzaPickup.png" alt="https://github.com/wang790222/pizzaForPickup" class="project-grid__card-img project-grid__card-img-1">
+              <img src="/img/proj1.png" alt="https://github.com/wang790222/pizzaForPickup"
+                class="project-grid__card-img project-grid__card-img-1">
               <figcaption class="project-grid__caption project-grid__caption-1">
-                <div class="project-grid__caption-item">Express</div>
-                <div class="project-grid__caption-item">Node.js</div> 
-                <div class="project-grid__caption-item">PostgreSQL</div> 
-                <div class="project-grid__caption-item">jQuery</div>
-                <div class="project-grid__caption-item">AJAX</div>
-                <div class="project-grid__caption-item">HTML</div>
-                <div class="project-grid__caption-item">CSS</div>
-                <div class="project-grid__caption-item">twilio API</div>
-                <a href="https://github.com/wang790222/pizzaForPickup" class="project-grid__caption-anchor" target="_blank">more...</a>
+                <a href="src/proj1.pdf" target="_blank">
+                  <div class="project-grid__caption-item">View pdf</div>
+                </a>
               </figcaption>
             </figure>
           </div>
-          <div class="project-grid__card project-grid__card-2">
+          <div class="project-grid__card project-grid__card-1">
             <figure class="project-grid__shape">
-              <img src="/img/spotter.png" alt="https://github.com/michaelsnow3/Final-Project" class="project-grid__card-img project-grid__card-img-2">
-              <figcaption class="project-grid__caption project-grid__caption-2">
-                <div class="project-grid__caption-item">React Native</div>
-                <div class="project-grid__caption-item">Node.js</div> 
-                <div class="project-grid__caption-item">Express</div> 
-                <div class="project-grid__caption-item">PostgreSQL</div>
-                <div class="project-grid__caption-item">socket.io</div>
-                <div class="project-grid__caption-item">CSS</div>
-                <div class="project-grid__caption-item">Spotify API</div>
-                <a href="https://github.com/michaelsnow3/Final-Project" class="project-grid__caption-anchor" target="_blank">more...</a>
+              <img src="/img/proj2.png" alt="https://github.com/wang790222/pizzaForPickup"
+                class="project-grid__card-img project-grid__card-img-1">
+              <figcaption class="project-grid__caption project-grid__caption-1">
+                <a href="src/proj2.pdf" target="_blank">
+                  <div class="project-grid__caption-item">View pdf</div>
+                </a>
               </figcaption>
             </figure>
           </div>
-          <div class="project-grid__card project-grid__card-3">
+          <div class="project-grid__card project-grid__card-1">
             <figure class="project-grid__shape">
-              <img src="/img/chatty.png" alt="https://github.com/wang790222/ChattyApp" class="project-grid__card-img project-grid__card-img-3">
-              <figcaption class="project-grid__caption project-grid__caption-3">
-                <div class="project-grid__caption-item">Node.js</div> 
-                <div class="project-grid__caption-item">Express</div> 
-                <div class="project-grid__caption-item">React</div>
-                <div class="project-grid__caption-item">WebSockets</div>
-                <a href="https://github.com/wang790222/ChattyApp" class="project-grid__caption-anchor" target="_blank">more...</a>
+              <img src="/img/proj3.png" alt="https://github.com/wang790222/pizzaForPickup"
+                class="project-grid__card-img project-grid__card-img-1">
+              <figcaption class="project-grid__caption project-grid__caption-1">
+                <a href="src/proj3.pdf" target="_blank">
+                  <div class="project-grid__caption-item">View pdf</div>
+                </a>
               </figcaption>
             </figure>
           </div>
-          <div class="project-grid__card project-grid__card-4">
-            <figure class="project-grid__shape">
-              <img src="/img/tweeter.png" alt="https://github.com/wang790222/tweeter" class="project-grid__card-img project-grid__card-img-4">
-              <figcaption class="project-grid__caption project-grid__caption-4">
-                <div class="project-grid__caption-item">Node.js</div> 
-                <div class="project-grid__caption-item">Express</div> 
-                <div class="project-grid__caption-item">MongoDB</div>
-                <div class="project-grid__caption-item">HTML</div>
-                <div class="project-grid__caption-item">CSS</div>
-                <a href="https://github.com/wang790222/tweeter" class="project-grid__caption-anchor" target="_blank">more...</a>
-              </figcaption>
-            </figure>
           </div>
-          <div class="project-grid__card project-grid__card-5">
-            <figure class="project-grid__shape">
-              <img src="/img/tinyUrl.png" alt="https://github.com/wang790222/TinyApp" class="project-grid__card-img project-grid__card-img-5">
-              <figcaption class="project-grid__caption project-grid__caption-5">
-                <div class="project-grid__caption-item">Node.js</div> 
-                <div class="project-grid__caption-item">Express</div> 
-                <div class="project-grid__caption-item">Cookie</div>
-                <a href="https://github.com/wang790222/TinyApp" class="project-grid__caption-anchor" target="_blank">more...</a>
-              </figcaption>
-            </figure>
           </div>
-        </div>
-      </div>
-      </section>
-      <section class="section-education" id="education">
-        <div class="u-center-text u-margin-bottom-large">
-          <h2 class="heading-secondary">Education</h2>
-        </div>
-        <div class="row">
-          <div class="col-1-of-4">
-            <div class="card">
-              <div class="card__side card__side--front">
-                <div class="card__picture card__picture-1">
-                  &nbsp;
-                </div>
-                <div class="card__details">
-                  <ul>
-                    <li>Lighthouse Labs</li>
-                    <li>Web Development Coding Bootcamp</li>
-                    <li>2019</li>
-                    <li>Toronto, Canada</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card__side card__side--back card__side--back-1">
-                <div class="card__cta">
-                  <p class="card__moreinfo">A fully immersive program to learn the foundations of web development.</p>
-                  <a href="https://www.lighthouselabs.ca/" class="card__btn" target="_blank">MORE INFO</a>
-                </div>
-              </div>
-            </div>
           </div>
-          <div class="col-1-of-4">
-            <div class="card">
-              <div class="card__side card__side--front">
-                <div class="card__picture card__picture-2">
-                  &nbsp;
-                </div>
-                <div class="card__details">
-                  <ul>
-                    <li>Reutlingen University</li>
-                    <li>Exchange Student</li>
-                    <li>2014 - 2015</li>
-                    <li>Reutlingen, Germany</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card__side card__side--back card__side--back-2">
-                <div class="card__cta">
-                  <p class="card__moreinfo">Study in department of computer science.</p>
-                  <a href="https://www.reutlingen-university.de/en/home/" class="card__btn" target="_blank">MORE INFO</a>
-                </div>
-              </div>
-            </div>
           </div>
-          <div class="col-1-of-4">
-            <div class="card">
-              <div class="card__side card__side--front">
-                <div class="card__picture card__picture-3">
-                  &nbsp;
-                </div>
-                <div class="card__details">
-                  <ul>
-                    <li>National Chiao Tung University</li>
-                    <li>Master's degree</li>
-                    <li>2012 - 2015</li>
-                    <li>Hsinchu, Taiwan</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card__side card__side--back card__side--back-3">
-                <div class="card__cta">
-                  <p class="card__moreinfo">Major in computer science.</p>
-                  <a href="https://www.topuniversities.com/universities/national-chiao-tung-university" class="card__btn" target="_blank">MORE INFO</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-1-of-4">
-            <div class="card">
-              <div class="card__side card__side--front">
-                <div class="card__picture card__picture-4">
-                  &nbsp;
-                </div>
-                <div class="card__details">
-                  <ul>
-                    <li>National Sun Yat-sen University</li>
-                    <li>Bachelor's degree</li>
-                    <li>2008 - 2012</li>
-                    <li>Kaohsiung, Taiwan</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card__side card__side--back card__side--back-4">
-                <div class="card__cta">
-                  <p class="card__moreinfo">Major in computer Science.</p>
-                  <a href="https://www.topuniversities.com/universities/national-sun-yat-sen-university" class="card__btn" target="_blank">MORE INFO</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
     </main>
     <footer class="footer">
@@ -309,9 +178,6 @@
         </li>
         <li>
           <a href="mailto:wang790222@gmail.com" class="footer__btn-social footer__btn-outline"><ion-icon name="mail" class="footer__icon"></ion-icon></a>
-        </li>
-        <li>
-          <a href="tel:+1-647-673-1359" target="_blank" class="footer__btn-social footer__btn-outline"><ion-icon name="phone-portrait" class="footer__icon"></ion-icon></a>
         </li>
       </ul>
     </footer>

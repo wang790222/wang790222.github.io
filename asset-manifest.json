@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aabafaff.css",
+    "main.js": "/static/js/main.ebbec4b9.js",
+    "static/media/me.JPG": "/static/media/me.f52982a57c612fc57df3.JPG",
+    "static/media/nctu.png": "/static/media/nctu.3a7816a319103c724793.png",
+    "static/media/nsysu.png": "/static/media/nsysu.da46adcc55ee4a0aa074.png",
+    "static/media/garmin.png": "/static/media/garmin.dbb1386bca63fbd377a3.png",
+    "static/media/move5.png": "/static/media/move5.696a71116b6fb15949bd.png",
+    "static/media/move3.png": "/static/media/move3.c77689799a262670da7c.png",
+    "static/media/move2.png": "/static/media/move2.7a4a3429198ed98e187f.png",
+    "static/media/move1.png": "/static/media/move1.5b870852469c8e7be21e.png",
+    "static/media/ps.png": "/static/media/ps.9baaecb39762ab2a40de.png",
+    "static/media/move4.png": "/static/media/move4.9242ed1cdab6baad77ab.png",
+    "static/media/move0.png": "/static/media/move0.62a2eef41d2754e69565.png",
+    "index.html": "/index.html",
+    "main.aabafaff.css.map": "/static/css/main.aabafaff.css.map",
+    "main.ebbec4b9.js.map": "/static/js/main.ebbec4b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aabafaff.css",
+    "static/js/main.ebbec4b9.js"
+  ]
+}

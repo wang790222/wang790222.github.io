@@ -184,7 +184,7 @@ const Section = styled.div`
   flex-firection: row;
   width: 100%;
   height: 100%;
-  align-items: center;
+  alignitems: "stretch";
 `;
 
 const Left = styled.div`
@@ -192,7 +192,6 @@ const Left = styled.div`
   border-right: 3px solid ${colors.grey3};
   border-style: double;
   box-sizing: border-box;
-  height: 100%;
   padding: 2rem 1rem;
 `;
 

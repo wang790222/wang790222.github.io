@@ -425,13 +425,11 @@ export default Experience;
 
 const ExperienceSection = styled.div`
   width: 100%;
-  height: 100%;
+  min-height: 30rem;
+  position: relative;
 `;
 
 const Slides = styled.div`
-  position: absolute;
-
-  height: 25rem;
   @media only screen and (max-width: 1680px) {
   }
 
@@ -480,7 +478,7 @@ const Slide = styled.div`
   &[data-order="0"] {
     opacity: 1;
     position: absolute;
-    bottom: 20%;
+    bottom: 28%;
     z-index: 6;
     left: 50%;
     transform: translateX(-50%);
@@ -491,7 +489,7 @@ const Slide = styled.div`
     transform: scale(0.7);
     position: absolute;
     left: 5%;
-    bottom: 45%;
+    bottom: 49%;
     z-index: 5;
     filter: blur(3px);
   }
@@ -502,7 +500,7 @@ const Slide = styled.div`
     z-index: 4;
     position: absolute;
     left: 15%;
-    bottom: 60%;
+    bottom: 64%;
     z-index: 5;
     filter: blur(6px);
   }
@@ -512,7 +510,7 @@ const Slide = styled.div`
     z-index: 3;
     position: absolute;
     left: 50%;
-    bottom: 70%;
+    bottom: 77%;
     z-index: 4;
     transform: translateX(-50%) scale(0.5);
     filter: blur(8px);
@@ -523,7 +521,7 @@ const Slide = styled.div`
     transform: scale(0.5);
     position: absolute;
     right: 15%;
-    bottom: 60%;
+    bottom: 64%;
     z-index: 5;
     filter: blur(6px);
   }
@@ -533,7 +531,7 @@ const Slide = styled.div`
     transform: scale(0.7);
     position: absolute;
     right: 5%;
-    bottom: 45%;
+    bottom: 49%;
     z-index: 5;
     filter: blur(3px);
   }

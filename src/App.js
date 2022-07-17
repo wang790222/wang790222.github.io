@@ -26,7 +26,6 @@ const GreyFrame = styled.div`
 `;
 
 const WhiteInnerFrame = styled.div`
-  height: 78vh;
   margin: 1rem 2rem;
   border-radius: 3px;
   background-color: ${colors.white};

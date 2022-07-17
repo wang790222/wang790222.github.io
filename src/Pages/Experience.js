@@ -224,48 +224,57 @@ const Experience = () => {
     switch (index % dataLenth) {
       case 3:
         return (
-          <ul>
-            <li>
-              Designed and developed applications for Garmin Connect IQ Store.
-              Implemented 5 Garmin Connect IQ in one year, included public and
-              internal use
-            </li>
-            <li>
-              Provided support for the front-end development and UI/UX design
-              initiatives for Garmin web application projects
-            </li>
-          </ul>
+          <div>
+            <h3>2016 Sept. - 2018 Sept.</h3>
+            <ul>
+              <li style={{ marginLeft: "2rem" }}>
+                Designed and developed applications for Garmin Connect IQ Store.
+                Implemented 5 Garmin Connect IQ in one year, included public and
+                internal use
+              </li>
+              <li style={{ marginLeft: "2rem" }}>
+                Provided support for the front-end development and UI/UX design
+                initiatives for Garmin web application projects
+              </li>
+            </ul>
+          </div>
         );
       case 4:
         return (
-          <ul>
-            <li>
-              Built front-end infrastructure in React/Redux. Responsible for
-              user experience, interface, design and translated UX concepts into
-              code
-            </li>
-            <li>
-              Led front-end aspect of technical integrations and customizations.
-              Launched three business level integrations
-            </li>
-            <li>
-              Involved in code reviews, unit/functional test case reviews and
-              refactoring
-            </li>
-          </ul>
+          <div>
+            <h3>2019 Sept. - 2022 May</h3>
+            <ul>
+              <li style={{ marginLeft: "2rem" }}>
+                Built front-end infrastructure in React/Redux. Responsible for
+                user experience, interface, design and translated UX concepts
+                into code
+              </li>
+              <li style={{ marginLeft: "2rem" }}>
+                Led front-end aspect of technical integrations and
+                customizations. Launched three business level integrations
+              </li>
+              <li style={{ marginLeft: "2rem" }}>
+                Involved in code reviews, unit/functional test case reviews and
+                refactoring
+              </li>
+            </ul>
+          </div>
         );
       case 5:
         return (
-          <ul>
-            <li>
-              Developing JavaScript-based applications for PlayStation gaming
-              consoles and future flagship Sony devices and services
-            </li>
-            <li>
-              Building digital commerce solutions for PlayStation games, media
-              content, and subscription services
-            </li>
-          </ul>
+          <div>
+            <h3>2022 May - Present</h3>
+            <ul>
+              <li style={{ marginLeft: "2rem" }}>
+                Developing JavaScript-based applications for PlayStation gaming
+                consoles and future flagship Sony devices and services
+              </li>
+              <li style={{ marginLeft: "2rem" }}>
+                Building digital commerce solutions for PlayStation games, media
+                content, and subscription services
+              </li>
+            </ul>
+          </div>
         );
       default:
         break;

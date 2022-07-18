@@ -96,6 +96,7 @@ const Experience = () => {
     section.current.focus();
   }, []);
 
+  /*
   const generateArrowKeys = () => {
     return (
       <div
@@ -178,7 +179,7 @@ const Experience = () => {
         </div>
       </div>
     );
-  };
+  }; */
 
   const generateDetail = (isFront) => {
     return (

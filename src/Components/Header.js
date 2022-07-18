@@ -31,11 +31,14 @@ export default Header;
 
 const Section = styled.div`
   text-align: center;
-  padding: 2rem 0 1rem;
+  padding: 24px 0 12px;
   border-bottom: 3px solid ${colors.grey3};
   border-style: double;
   z-index: 999;
   height: 85px;
+  position: fixed;
+  background-color: ${colors.white};
+  width: 100%;
 `;
 
 const StyledUl = styled.ul`

@@ -185,6 +185,9 @@ const Section = styled.div`
   width: 100%;
   height: 100%;
   alignitems: "stretch";
+  border-bottom: 3px solid ${colors.grey3};
+  border-style: double;
+  margin-top: 120px;
 `;
 
 const Left = styled.div`
@@ -216,6 +219,7 @@ const Right = styled.div`
 const Title = styled.div`
   font-size: 24px;
   font-weight: 700;
+  text-align: center;
 `;
 
 const Subtitle = styled.div`

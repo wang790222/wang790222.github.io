@@ -140,7 +140,7 @@ const Section = styled.div`
   height: 100%;
   gap: 2rem;
   color: ${colors.black};
-  margin: 2rem 0;
+  margin-top: 160px;
 `;
 
 const StyledImg = styled.img`

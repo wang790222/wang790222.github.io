@@ -427,6 +427,7 @@ const ExperienceSection = styled.div`
   width: 100%;
   min-height: 30rem;
   position: relative;
+  margin-top: 120px;
 `;
 
 const Slides = styled.div`

@@ -5,28 +5,17 @@ import { colors } from "./Utils/colors";
 
 function App() {
   return (
-    <GreyFrame>
-      <WhiteInnerFrame>
-        <Header />
-        <Content />
-      </WhiteInnerFrame>
+    <WhiteInnerFrame>
+      <Header />
+      <Content />
       <Footer />
-    </GreyFrame>
+    </WhiteInnerFrame>
   );
 }
 
 export default App;
 
-const GreyFrame = styled.div`
-  background: ${colors.grey1};
-  height: auto;
-  padding: 1rem;
-  margin: 2rem;
-  border-radius: 3px;
-`;
-
 const WhiteInnerFrame = styled.div`
-  margin: 1rem 2rem;
   border-radius: 3px;
   background-color: ${colors.white};
   position: relative;

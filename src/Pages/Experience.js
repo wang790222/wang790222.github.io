@@ -1,6 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 
+import { Loader } from "../Components";
+
 import nsysu from "../Images/nsysu.png";
 import nctu from "../Images/nctu.png";
 import reutlingen from "../Images/reutlingen.png";
@@ -73,6 +75,12 @@ const moveArray = [move0, move1, move2, move3, move4, move5];
 const Experience = () => {
   const [index, setIndex] = useState(0);
   const [showDetail, setShowDetail] = useState(false);
+  const [img1StillLoading, setImg1StillLoading] = useState(true);
+  const [img2StillLoading, setImg2StillLoading] = useState(true);
+  const [img3StillLoading, setImg3StillLoading] = useState(true);
+  const [img4StillLoading, setImg4StillLoading] = useState(true);
+  const [img5StillLoading, setImg5StillLoading] = useState(true);
+  const [img6StillLoading, setImg6StillLoading] = useState(true);
   const section = useRef(null);
   const dataLength = experienceData.length;
   const curIndex = index % experienceData.length;
@@ -95,6 +103,17 @@ const Experience = () => {
   useEffect(() => {
     section.current.focus();
   }, []);
+
+  const isLoading = () => {
+    return (
+      img1StillLoading ||
+      img2StillLoading ||
+      img3StillLoading ||
+      img4StillLoading ||
+      img5StillLoading ||
+      img6StillLoading
+    );
+  };
 
   /*
   const generateArrowKeys = () => {
@@ -283,142 +302,152 @@ const Experience = () => {
   };
 
   return (
-    <ExperienceSection
-      ref={section}
-      onClick={() => {
-        if (index === dataLength - 1) {
-          setIndex(0);
-        } else {
-          setIndex(index + 1);
-        }
-        setShowDetail(false);
-      }}
-      onKeyDown={(e) => {
-        if (e.key === "ArrowRight") {
+    <div>
+      {isLoading() ? <Loader /> : null}
+
+      <ExperienceSection
+        ref={section}
+        onClick={() => {
           if (index === dataLength - 1) {
             setIndex(0);
           } else {
             setIndex(index + 1);
           }
           setShowDetail(false);
-        } else if (e.key === "ArrowLeft") {
-          if (index === 0) {
-            setIndex(dataLength - 1);
-          } else {
-            setIndex(index - 1);
-          }
-          setShowDetail(false);
-        }
-
-        if (index === 3 || index === 4 || index === 5) {
-          if (e.key === "ArrowDown") {
-            setShowDetail(true);
-          } else if (e.key === "ArrowUp") {
+        }}
+        onKeyDown={(e) => {
+          if (e.key === "ArrowRight") {
+            if (index === dataLength - 1) {
+              setIndex(0);
+            } else {
+              setIndex(index + 1);
+            }
+            setShowDetail(false);
+          } else if (e.key === "ArrowLeft") {
+            if (index === 0) {
+              setIndex(dataLength - 1);
+            } else {
+              setIndex(index - 1);
+            }
             setShowDetail(false);
           }
-        }
-      }}
-      tabIndex="0"
-    >
-      <Slides>
-        <Slide data-order={curIndex % dataLength} id="nsysu">
-          <div className="slide-header">{experienceData[0].header}</div>
-          <div className="slide-sub-header">
-            <div>
-              <img
-                src={experienceData[0].logo}
-                alt={experienceData[0].header}
-              ></img>
+
+          if (index === 3 || index === 4 || index === 5) {
+            if (e.key === "ArrowDown") {
+              setShowDetail(true);
+            } else if (e.key === "ArrowUp") {
+              setShowDetail(false);
+            }
+          }
+        }}
+        tabIndex="0"
+      >
+        <Slides>
+          <Slide data-order={curIndex % dataLength} id="nsysu">
+            <div className="slide-header">{experienceData[0].header}</div>
+            <div className="slide-sub-header">
+              <div>
+                <img
+                  src={experienceData[0].logo}
+                  alt={experienceData[0].header}
+                  onLoad={() => setImg1StillLoading(false)}
+                ></img>
+              </div>
+              <div className="slide-sub-header-text">
+                {experienceData[0].subHeader}
+              </div>
             </div>
-            <div className="slide-sub-header-text">
-              {experienceData[0].subHeader}
+          </Slide>
+          <Slide data-order={(curIndex + 1) % dataLength} id="ps">
+            <div className="slide-header">{experienceData[5].header}</div>
+            <div className="slide-sub-header">
+              <div>
+                <img
+                  src={experienceData[5].logo}
+                  alt={experienceData[5].header}
+                  onLoad={() => setImg6StillLoading(false)}
+                ></img>
+              </div>
+              <div className="slide-sub-header-text">
+                {experienceData[5].subHeader}
+                {generateDetail(curIndex === 5)}
+              </div>
             </div>
-          </div>
-        </Slide>
-        <Slide data-order={(curIndex + 1) % dataLength} id="ps">
-          <div className="slide-header">{experienceData[5].header}</div>
-          <div className="slide-sub-header">
-            <div>
-              <img
-                src={experienceData[5].logo}
-                alt={experienceData[5].header}
-              ></img>
+          </Slide>
+          <Slide data-order={(curIndex + 2) % dataLength} id="pwpa">
+            <div className="slide-header">{experienceData[4].header}</div>
+            <div className="slide-sub-header">
+              <div>
+                <img
+                  src={experienceData[4].logo}
+                  alt={experienceData[4].header}
+                  onLoad={() => setImg5StillLoading(false)}
+                ></img>
+              </div>
+              <div className="slide-sub-header-text">
+                {experienceData[4].subHeader}
+                {generateDetail(curIndex === 4)}
+              </div>
             </div>
-            <div className="slide-sub-header-text">
-              {experienceData[5].subHeader}
-              {generateDetail(curIndex === 5)}
+          </Slide>
+          <Slide data-order={(curIndex + 3) % dataLength} id="garmin">
+            <div className="slide-header">{experienceData[3].header}</div>
+            <div className="slide-sub-header">
+              <div>
+                <img
+                  src={experienceData[3].logo}
+                  alt={experienceData[3].header}
+                  onLoad={() => setImg4StillLoading(false)}
+                ></img>
+              </div>
+              <div className="slide-sub-header-text">
+                {experienceData[3].subHeader}
+                {generateDetail(curIndex === 3)}
+              </div>
             </div>
-          </div>
-        </Slide>
-        <Slide data-order={(curIndex + 2) % dataLength} id="pwpa">
-          <div className="slide-header">{experienceData[4].header}</div>
-          <div className="slide-sub-header">
-            <div>
-              <img
-                src={experienceData[4].logo}
-                alt={experienceData[4].header}
-              ></img>
+          </Slide>
+          <Slide data-order={(curIndex + 4) % dataLength} id="reutlingen">
+            <div className="slide-header">{experienceData[2].header}</div>
+            <div className="slide-sub-header">
+              <div>
+                <img
+                  src={experienceData[2].logo}
+                  alt={experienceData[2].header}
+                  onLoad={() => setImg3StillLoading(false)}
+                ></img>
+              </div>
+              <div className="slide-sub-header-text">
+                {experienceData[2].subHeader}
+              </div>
             </div>
-            <div className="slide-sub-header-text">
-              {experienceData[4].subHeader}
-              {generateDetail(curIndex === 4)}
+          </Slide>
+          <Slide data-order={(curIndex + 5) % dataLength} id="nctu">
+            <div className="slide-header">{experienceData[1].header}</div>
+            <div className="slide-sub-header">
+              <div>
+                <img
+                  src={experienceData[1].logo}
+                  alt={experienceData[1].header}
+                  onLoad={() => setImg2StillLoading(false)}
+                ></img>
+              </div>
+              <div className="slide-sub-header-text">
+                {experienceData[1].subHeader}
+              </div>
             </div>
-          </div>
-        </Slide>
-        <Slide data-order={(curIndex + 3) % dataLength} id="garmin">
-          <div className="slide-header">{experienceData[3].header}</div>
-          <div className="slide-sub-header">
-            <div>
-              <img
-                src={experienceData[3].logo}
-                alt={experienceData[3].header}
-              ></img>
-            </div>
-            <div className="slide-sub-header-text">
-              {experienceData[3].subHeader}
-              {generateDetail(curIndex === 3)}
-            </div>
-          </div>
-        </Slide>
-        <Slide data-order={(curIndex + 4) % dataLength}>
-          <div className="slide-header">{experienceData[2].header}</div>
-          <div className="slide-sub-header">
-            <div>
-              <img
-                src={experienceData[2].logo}
-                alt={experienceData[2].header}
-              ></img>
-            </div>
-            <div className="slide-sub-header-text">
-              {experienceData[2].subHeader}
-            </div>
-          </div>
-        </Slide>
-        <Slide data-order={(curIndex + 5) % dataLength}>
-          <div className="slide-header">{experienceData[1].header}</div>
-          <div className="slide-sub-header">
-            <div>
-              <img
-                src={experienceData[1].logo}
-                alt={experienceData[1].header}
-              ></img>
-            </div>
-            <div className="slide-sub-header-text">
-              {experienceData[1].subHeader}
-            </div>
-          </div>
-        </Slide>
-      </Slides>
-      <Timestamp>
-        <div className="year">{experienceData[curIndex].startYear}</div>
-        <div className="month">{experienceData[curIndex].month}</div>
-      </Timestamp>
-      {generateMovePic(curIndex)}
-      <Timeline>&nbsp;</Timeline>
-      {showDetail ? (
-        <Detail>{getDetailContent(curIndex, dataLength)}</Detail>
-      ) : null}
-    </ExperienceSection>
+          </Slide>
+        </Slides>
+        <Timestamp>
+          <div className="year">{experienceData[curIndex].startYear}</div>
+          <div className="month">{experienceData[curIndex].month}</div>
+        </Timestamp>
+        {generateMovePic(curIndex)}
+        <Timeline>&nbsp;</Timeline>
+        {showDetail ? (
+          <Detail>{getDetailContent(curIndex, dataLength)}</Detail>
+        ) : null}
+      </ExperienceSection>
+    </div>
   );
 };
 

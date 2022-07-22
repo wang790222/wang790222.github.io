@@ -20,6 +20,11 @@ import v15 from "../Images/v15.jpg";
 import v16 from "../Images/v16.jpg";
 import v17 from "../Images/v17.jpg";
 import v18 from "../Images/v18.jpg";
+import v19 from "../Images/v19.jpg";
+import v20 from "../Images/v20.jpg";
+import v21 from "../Images/v21.jpg";
+import v22 from "../Images/v22.jpg";
+import v23 from "../Images/v23.jpg";
 
 import h1 from "../Images/h1.jpg";
 import h2 from "../Images/h2.jpg";
@@ -43,6 +48,24 @@ import h19 from "../Images/h19.jpg";
 import h20 from "../Images/h20.jpg";
 import h21 from "../Images/h21.jpg";
 import h22 from "../Images/h22.jpg";
+import h23 from "../Images/h23.jpg";
+import h24 from "../Images/h24.jpg";
+import h25 from "../Images/h25.jpg";
+import h26 from "../Images/h26.jpg";
+import h27 from "../Images/h27.jpg";
+import h28 from "../Images/h28.jpg";
+import h29 from "../Images/h29.jpg";
+import h30 from "../Images/h30.jpg";
+import h31 from "../Images/h31.jpg";
+import h32 from "../Images/h32.jpg";
+import h33 from "../Images/h33.jpg";
+import h34 from "../Images/h34.jpg";
+import h35 from "../Images/h35.jpg";
+import h36 from "../Images/h36.jpg";
+import h37 from "../Images/h37.jpg";
+import h38 from "../Images/h38.jpg";
+import h39 from "../Images/h39.jpg";
+import h40 from "../Images/h40.jpg";
 
 import top_pic from "../Images/top_pic.jpg";
 import { colors } from "../Utils/colors";
@@ -91,7 +114,30 @@ const Photography = () => {
       img39StillLoading ||
       img40StillLoading ||
       img41StillLoading ||
-      img42StillLoading
+      img42StillLoading ||
+      img43StillLoading ||
+      img44StillLoading ||
+      img45StillLoading ||
+      img46StillLoading ||
+      img47StillLoading ||
+      img48StillLoading ||
+      img49StillLoading ||
+      img50StillLoading ||
+      img51StillLoading ||
+      img52StillLoading ||
+      img53StillLoading ||
+      img54StillLoading ||
+      img55StillLoading ||
+      img56StillLoading ||
+      img57StillLoading ||
+      img58StillLoading ||
+      img59StillLoading ||
+      img60StillLoading ||
+      img61StillLoading ||
+      img62StillLoading ||
+      img63StillLoading ||
+      img64StillLoading ||
+      img65StillLoading
     );
   };
 
@@ -137,6 +183,29 @@ const Photography = () => {
   const [img40StillLoading, setImg40StillLoading] = useState(true);
   const [img41StillLoading, setImg41StillLoading] = useState(true);
   const [img42StillLoading, setImg42StillLoading] = useState(true);
+  const [img43StillLoading, setImg43StillLoading] = useState(true);
+  const [img44StillLoading, setImg44StillLoading] = useState(true);
+  const [img45StillLoading, setImg45StillLoading] = useState(true);
+  const [img46StillLoading, setImg46StillLoading] = useState(true);
+  const [img47StillLoading, setImg47StillLoading] = useState(true);
+  const [img48StillLoading, setImg48StillLoading] = useState(true);
+  const [img49StillLoading, setImg49StillLoading] = useState(true);
+  const [img50StillLoading, setImg50StillLoading] = useState(true);
+  const [img51StillLoading, setImg51StillLoading] = useState(true);
+  const [img52StillLoading, setImg52StillLoading] = useState(true);
+  const [img53StillLoading, setImg53StillLoading] = useState(true);
+  const [img54StillLoading, setImg54StillLoading] = useState(true);
+  const [img55StillLoading, setImg55StillLoading] = useState(true);
+  const [img56StillLoading, setImg56StillLoading] = useState(true);
+  const [img57StillLoading, setImg57StillLoading] = useState(true);
+  const [img58StillLoading, setImg58StillLoading] = useState(true);
+  const [img59StillLoading, setImg59StillLoading] = useState(true);
+  const [img60StillLoading, setImg60StillLoading] = useState(true);
+  const [img61StillLoading, setImg61StillLoading] = useState(true);
+  const [img62StillLoading, setImg62StillLoading] = useState(true);
+  const [img63StillLoading, setImg63StillLoading] = useState(true);
+  const [img64StillLoading, setImg64StillLoading] = useState(true);
+  const [img65StillLoading, setImg65StillLoading] = useState(true);
 
   return (
     <div>
@@ -257,7 +326,7 @@ const Photography = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                gridColumnStart: 2,
+                gridColumnStart: 1,
                 gridColumnEnd: 13,
                 gridRowStart: 1,
                 gridRowEnd: 16,
@@ -296,7 +365,7 @@ const Photography = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                gridColumnStart: 2,
+                gridColumnStart: 1,
                 gridColumnEnd: 25,
                 gridRowStart: 16,
                 gridRowEnd: 31,
@@ -322,7 +391,7 @@ const Photography = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                gridColumnStart: 2,
+                gridColumnStart: 1,
                 gridColumnEnd: 13,
                 gridRowStart: 31,
                 gridRowEnd: 46,
@@ -374,7 +443,7 @@ const Photography = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                gridColumnStart: 2,
+                gridColumnStart: 1,
                 gridColumnEnd: 25,
                 gridRowStart: 46,
                 gridRowEnd: 61,
@@ -442,7 +511,7 @@ const Photography = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                gridColumnStart: 2,
+                gridColumnStart: 1,
                 gridColumnEnd: 13,
                 gridRowStart: 1,
                 gridRowEnd: 16,
@@ -481,7 +550,7 @@ const Photography = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                gridColumnStart: 2,
+                gridColumnStart: 1,
                 gridColumnEnd: 25,
                 gridRowStart: 16,
                 gridRowEnd: 31,
@@ -507,8 +576,8 @@ const Photography = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                gridColumnStart: 2,
-                gridColumnEnd: 14,
+                gridColumnStart: 1,
+                gridColumnEnd: 13,
                 gridRowStart: 31,
                 gridRowEnd: 46,
               }}
@@ -520,7 +589,7 @@ const Photography = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                gridColumnStart: 14,
+                gridColumnStart: 13,
                 gridColumnEnd: 27,
                 gridRowStart: 31,
                 gridRowEnd: 46,
@@ -536,7 +605,7 @@ const Photography = () => {
                 gridColumnStart: 27,
                 gridColumnEnd: 40,
                 gridRowStart: 31,
-                gridRowEnd: 40,
+                gridRowEnd: 41,
               }}
               onLoad={() => setImg33StillLoading(false)}
             />
@@ -548,7 +617,7 @@ const Photography = () => {
                 height: "100%",
                 gridColumnStart: 27,
                 gridColumnEnd: 40,
-                gridRowStart: 40,
+                gridRowStart: 41,
                 gridRowEnd: 61,
               }}
               onLoad={() => setImg34StillLoading(false)}
@@ -559,7 +628,7 @@ const Photography = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                gridColumnStart: 2,
+                gridColumnStart: 1,
                 gridColumnEnd: 27,
                 gridRowStart: 46,
                 gridRowEnd: 61,
@@ -572,7 +641,7 @@ const Photography = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                gridColumnStart: 2,
+                gridColumnStart: 1,
                 gridColumnEnd: 19,
                 gridRowStart: 61,
                 gridRowEnd: 72,
@@ -598,7 +667,7 @@ const Photography = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                gridColumnStart: 2,
+                gridColumnStart: 1,
                 gridColumnEnd: 19,
                 gridRowStart: 72,
                 gridRowEnd: 84,
@@ -637,12 +706,272 @@ const Photography = () => {
               style={{
                 width: "100%",
                 height: "100%",
-                gridColumnStart: 2,
+                gridColumnStart: 1,
                 gridColumnEnd: 40,
                 gridRowStart: 84,
                 gridRowEnd: 108,
               }}
               onLoad={() => setImg41StillLoading(false)}
+            />
+          </div>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            width: "80%",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            margin: "0px auto 20px",
+            gap: "20px",
+          }}
+        >
+          <img
+            src={h23}
+            alt="h23"
+            style={{ maxWidth: "26%" }}
+            onLoad={() => setImg43StillLoading(false)}
+          />
+          <img
+            src={h24}
+            alt="h24"
+            style={{ maxWidth: "26%" }}
+            onLoad={() => setImg44StillLoading(false)}
+          />
+          <img
+            src={h25}
+            alt="h25"
+            style={{ maxWidth: "26%" }}
+            onLoad={() => setImg45StillLoading(false)}
+          />
+
+          <img
+            src={h26}
+            alt="h26"
+            style={{ maxWidth: "26%" }}
+            onLoad={() => setImg46StillLoading(false)}
+          />
+          <img
+            src={h27}
+            alt="h27"
+            style={{ maxWidth: "26%" }}
+            onLoad={() => setImg47StillLoading(false)}
+          />
+          <img
+            src={h28}
+            alt="h28"
+            style={{ maxWidth: "26%" }}
+            onLoad={() => setImg48StillLoading(false)}
+          />
+
+          <img
+            src={h29}
+            alt="h29"
+            style={{ maxWidth: "26%" }}
+            onLoad={() => setImg49StillLoading(false)}
+          />
+          <img
+            src={h30}
+            alt="h30"
+            style={{ maxWidth: "26%" }}
+            onLoad={() => setImg50StillLoading(false)}
+          />
+          <img
+            src={h31}
+            alt="h31"
+            style={{ maxWidth: "26%" }}
+            onLoad={() => setImg51StillLoading(false)}
+          />
+        </div>
+        <div style={{ width: "65%", margin: "0 auto" }}>
+          <div
+            style={{
+              display: "grid",
+              gap: "15px",
+              justifyContent: "center",
+              gridTemplateRows: "repeat(120, 10px)",
+            }}
+          >
+            <img
+              src={v19}
+              alt="v1"
+              style={{
+                width: "100%",
+                height: "100%",
+                gridColumnStart: 1,
+                gridColumnEnd: 13,
+                gridRowStart: 1,
+                gridRowEnd: 18,
+              }}
+              onLoad={() => setImg52StillLoading(false)}
+            />
+            <img
+              src={v20}
+              alt="v20"
+              style={{
+                width: "100%",
+                height: "100%",
+                gridColumnStart: 13,
+                gridColumnEnd: 25,
+                gridRowStart: 1,
+                gridRowEnd: 18,
+              }}
+              onLoad={() => setImg53StillLoading(false)}
+            />
+            <img
+              src={v21}
+              alt="v21"
+              style={{
+                width: "100%",
+                height: "100%",
+                gridColumnStart: 25,
+                gridColumnEnd: 40,
+                gridRowStart: 1,
+                gridRowEnd: 24,
+              }}
+              onLoad={() => setImg54StillLoading(false)}
+            />
+            <img
+              src={h32}
+              alt="h32"
+              style={{
+                width: "100%",
+                height: "100%",
+                gridColumnStart: 1,
+                gridColumnEnd: 25,
+                gridRowStart: 18,
+                gridRowEnd: 33,
+              }}
+              onLoad={() => setImg55StillLoading(false)}
+            />
+            <img
+              src={h33}
+              alt="h33"
+              style={{
+                width: "100%",
+                height: "100%",
+                gridColumnStart: 25,
+                gridColumnEnd: 40,
+                gridRowStart: 24,
+                gridRowEnd: 33,
+              }}
+              onLoad={() => setImg56StillLoading(false)}
+            />
+            <img
+              src={h34}
+              alt="h34"
+              style={{
+                width: "100%",
+                height: "100%",
+                gridColumnStart: 1,
+                gridColumnEnd: 25,
+                gridRowStart: 33,
+                gridRowEnd: 48,
+              }}
+              onLoad={() => setImg57StillLoading(false)}
+            />
+            <img
+              src={h35}
+              alt="h35"
+              style={{
+                width: "100%",
+                height: "100%",
+                gridColumnStart: 25,
+                gridColumnEnd: 40,
+                gridRowStart: 33,
+                gridRowEnd: 42,
+              }}
+              onLoad={() => setImg58StillLoading(false)}
+            />
+            <img
+              src={v22}
+              alt="v22"
+              style={{
+                width: "100%",
+                height: "100%",
+                gridColumnStart: 25,
+                gridColumnEnd: 40,
+                gridRowStart: 42,
+                gridRowEnd: 63,
+              }}
+              onLoad={() => setImg59StillLoading(false)}
+            />
+            <img
+              src={h36}
+              alt="h36"
+              style={{
+                width: "100%",
+                height: "100%",
+                gridColumnStart: 1,
+                gridColumnEnd: 25,
+                gridRowStart: 48,
+                gridRowEnd: 63,
+              }}
+              onLoad={() => setImg60StillLoading(false)}
+            />
+            <img
+              src={h37}
+              alt="h37"
+              style={{
+                width: "100%",
+                height: "100%",
+                gridColumnStart: 1,
+                gridColumnEnd: 25,
+                gridRowStart: 63,
+                gridRowEnd: 78,
+              }}
+              onLoad={() => setImg61StillLoading(false)}
+            />
+            <img
+              src={h38}
+              alt="h38"
+              style={{
+                width: "100%",
+                height: "100%",
+                gridColumnStart: 25,
+                gridColumnEnd: 40,
+                gridRowStart: 63,
+                gridRowEnd: 74,
+              }}
+              onLoad={() => setImg62StillLoading(false)}
+            />
+            <img
+              src={v23}
+              alt="v23"
+              style={{
+                width: "100%",
+                height: "100%",
+                gridColumnStart: 25,
+                gridColumnEnd: 40,
+                gridRowStart: 74,
+                gridRowEnd: 95,
+              }}
+              onLoad={() => setImg63StillLoading(false)}
+            />
+            <img
+              src={h39}
+              alt="h39"
+              style={{
+                width: "100%",
+                height: "100%",
+                gridColumnStart: 1,
+                gridColumnEnd: 25,
+                gridRowStart: 78,
+                gridRowEnd: 95,
+              }}
+              onLoad={() => setImg64StillLoading(false)}
+            />
+            <img
+              src={h40}
+              alt="h40"
+              style={{
+                width: "100%",
+                height: "100%",
+                gridColumnStart: 1,
+                gridColumnEnd: 40,
+                gridRowStart: 95,
+                gridRowEnd: 120,
+              }}
+              onLoad={() => setImg65StillLoading(false)}
             />
           </div>
         </div>

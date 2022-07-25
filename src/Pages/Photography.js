@@ -27,14 +27,7 @@ import v22 from "../Images/v22.jpg";
 import v23 from "../Images/v23.jpg";
 
 import h1 from "../Images/h1.jpg";
-import h2 from "../Images/h2.jpg";
-import h3 from "../Images/h3.jpg";
-import h4 from "../Images/h4.jpg";
-import h5 from "../Images/h5.jpg";
-import h6 from "../Images/h6.jpg";
-import h7 from "../Images/h7.jpg";
-import h8 from "../Images/h8.jpg";
-import h9 from "../Images/h9.jpg";
+
 import h10 from "../Images/h10.jpg";
 import h11 from "../Images/h11.jpg";
 import h12 from "../Images/h12.jpg";
@@ -69,6 +62,7 @@ import h40 from "../Images/h40.jpg";
 
 import top_pic from "../Images/top_pic.jpg";
 import { colors } from "../Utils/colors";
+import { imgObj } from "../Utils/imageObj";
 
 const Photography = () => {
   const isLoading = () => {
@@ -207,18 +201,29 @@ const Photography = () => {
   const [img64StillLoading, setImg64StillLoading] = useState(true);
   const [img65StillLoading, setImg65StillLoading] = useState(true);
 
+  const getImage = (width, loadingFunction, imgObjDetailed) => {
+    const { alt, img, place } = imgObjDetailed;
+
+    return (
+      <StyledImage width={width} img={img}>
+        <img src={top_pic} alt={alt} onLoad={() => loadingFunction(false)} />
+        <div className="img-text">{place}</div>
+      </StyledImage>
+    );
+  };
+
   return (
     <div>
       {isLoading() ? <Loader /> : null}
       <Section>
-        <div style={{ textAlign: "center", width: "68%", margin: "0 auto" }}>
+        <StyledImage width={68} img={top_pic} style={{ margin: "0 auto" }}>
           <img
             src={top_pic}
-            alt="top"
-            style={{ maxWidth: "100%" }}
+            alt="top_pic"
             onLoad={() => setImg42StillLoading(false)}
           />
-        </div>
+          <div className="img-text">Crotia</div>
+        </StyledImage>
         <div
           style={{
             display: "flex",
@@ -229,62 +234,15 @@ const Photography = () => {
             gap: "20px",
           }}
         >
-          <img
-            src={h1}
-            alt="h1"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg1StillLoading(false)}
-          />
-          <img
-            src={h2}
-            alt="h2"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg2StillLoading(false)}
-          />
-          <img
-            src={h3}
-            alt="h3"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg3StillLoading(false)}
-          />
-
-          <img
-            src={h4}
-            alt="h4"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg4StillLoading(false)}
-          />
-          <img
-            src={h5}
-            alt="h5"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg5StillLoading(false)}
-          />
-          <img
-            src={h6}
-            alt="h6"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg6StillLoading(false)}
-          />
-
-          <img
-            src={h7}
-            alt="h7"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg7StillLoading(false)}
-          />
-          <img
-            src={h8}
-            alt="h8"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg8StillLoading(false)}
-          />
-          <img
-            src={h9}
-            alt="h9"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg9StillLoading(false)}
-          />
+          {getImage(26, setImg1StillLoading, imgObj[1])}
+          {getImage(26, setImg2StillLoading, imgObj[2])}
+          {getImage(26, setImg3StillLoading, imgObj[3])}
+          {getImage(26, setImg4StillLoading, imgObj[4])}
+          {getImage(26, setImg5StillLoading, imgObj[5])}
+          {getImage(26, setImg6StillLoading, imgObj[6])}
+          {getImage(26, setImg7StillLoading, imgObj[7])}
+          {getImage(26, setImg8StillLoading, imgObj[8])}
+          {getImage(26, setImg9StillLoading, imgObj[9])}
         </div>
         <div
           style={{
@@ -320,19 +278,15 @@ const Photography = () => {
               gridTemplateRows: "repeat(60, 10px)",
             }}
           >
-            <img
-              src={v1}
-              alt="v1"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 13,
-                gridRowStart: 1,
-                gridRowEnd: 16,
-              }}
-              onLoad={() => setImg10StillLoading(false)}
-            />
+            <StyledImageInGrid img={v1}>
+              <img
+                src={v1}
+                alt="v1"
+                onLoad={() => setImg10StillLoading(false)}
+              />
+              <div className="img-text">Preikestolen, Norway</div>
+            </StyledImageInGrid>
+
             <img
               src={v2}
               alt="v2"
@@ -984,4 +938,100 @@ export default Photography;
 
 const Section = styled.div`
   margin-top: 165px;
+`;
+
+const StyledImage = styled.div`
+  position: relative;
+  max-width: ${(props) => `${props.width}%`};
+
+  & img {
+    width: 100%;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(${(props) => props.img});
+    transition: 0.5s;
+    background-size: cover;
+  }
+
+  &:hover {
+    .img-text {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &:before {
+      filter: brightness(35%);
+    }
+  }
+
+  .img-text {
+    white-space: nowrap;
+    position: absolute;
+    font-size: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0s, opacity 0.25s linear;
+    transition: visibility 0s, opacity 0.25s linear;
+  }
+`;
+
+const StyledImageInGrid = styled.div`
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 13;
+  grid-row-start: 1;
+  grid-row-end: 16;
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(${(props) => props.img});
+    transition: 0.5s;
+    background-size: cover;
+  }
+
+  &:hover {
+    .img-text {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &:before {
+      filter: brightness(35%);
+    }
+  }
+
+  .img-text {
+    white-space: nowrap;
+    position: absolute;
+    font-size: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0s, opacity 0.25s linear;
+    transition: visibility 0s, opacity 0.25s linear;
+  }
 `;

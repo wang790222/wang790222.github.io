@@ -222,7 +222,7 @@ const Photography = () => {
             alt="top_pic"
             onLoad={() => setImg42StillLoading(false)}
           />
-          <div className="img-text">Crotia</div>
+          <div className="img-text">Ugljan, Croatia</div>
         </StyledImage>
         <div
           style={{

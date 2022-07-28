@@ -75,15 +75,15 @@ const About = () => (
 
       <StyledP>
         Thanks for visiting my website! My name is Eddie and I am a front-end
-        engineer with a computer science background. Over the past four years, I
-        have built up skills especially in front-end development. I equip solid
-        knowledge of javascript, html, and css. I am also very confident working
-        with React/Redux. My passion is building high-quality and user-friendly
-        front-end applications.
+        engineer currently work at <b>PlayStation</b>. Over the past four years,
+        I have built up skills especially in front-end development. I equip
+        solid knowledge of javascript, html, and css. I am also very confident
+        working with React/Redux. My passion is building high-quality and
+        user-friendly front-end applications.
         <br />
         <br />
-        Feel free to send me an email at wang790222@gmail.com or a message on
-        LinkedIn. Look forward to connecting with you!
+        Feel free to send me an email at <b>wang790222@gmail.com</b> or a
+        message on LinkedIn. Look forward to connecting with you!
       </StyledP>
     </Middle>
     <Right>
@@ -211,7 +211,6 @@ const Right = styled.div`
   flex-basis: 22%;
   border-left: 3px solid ${colors.grey3};
   border-style: double;
-  height: 100%;
   box-sizing: border-box;
   padding: 2rem 1rem;
 `;

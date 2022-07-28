@@ -2,9 +2,15 @@ import styled from "styled-components";
 
 import { Header, Content, Footer } from "./Components";
 import { colors } from "./Utils/colors";
+import useWindowDimensions from "./Utils/useWindowDimensions";
+import { Mobile } from "./Pages";
 
 function App() {
-  return (
+  const { width } = useWindowDimensions();
+
+  return width < 1080 ? (
+    <Mobile />
+  ) : (
     <WhiteInnerFrame>
       <Header />
       <Content />

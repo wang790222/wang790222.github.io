@@ -2,64 +2,6 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { Loader } from "../Components";
 
-import v1 from "../Images/v1.jpg";
-import v2 from "../Images/v2.jpg";
-import v3 from "../Images/v3.jpg";
-import v4 from "../Images/v4.jpg";
-import v5 from "../Images/v5.jpg";
-import v6 from "../Images/v6.jpg";
-import v7 from "../Images/v7.jpg";
-import v8 from "../Images/v8.jpg";
-import v9 from "../Images/v9.jpg";
-import v10 from "../Images/v10.jpg";
-import v11 from "../Images/v11.jpg";
-import v12 from "../Images/v12.jpg";
-import v13 from "../Images/v13.jpg";
-import v14 from "../Images/v14.jpg";
-import v15 from "../Images/v15.jpg";
-import v16 from "../Images/v16.jpg";
-import v17 from "../Images/v17.jpg";
-import v18 from "../Images/v18.jpg";
-import v19 from "../Images/v19.jpg";
-import v20 from "../Images/v20.jpg";
-import v21 from "../Images/v21.jpg";
-import v22 from "../Images/v22.jpg";
-import v23 from "../Images/v23.jpg";
-
-import h1 from "../Images/h1.jpg";
-
-import h10 from "../Images/h10.jpg";
-import h11 from "../Images/h11.jpg";
-import h12 from "../Images/h12.jpg";
-import h13 from "../Images/h13.jpg";
-import h14 from "../Images/h14.jpg";
-import h15 from "../Images/h15.jpg";
-import h16 from "../Images/h16.jpg";
-import h17 from "../Images/h17.jpg";
-import h18 from "../Images/h18.jpg";
-import h19 from "../Images/h19.jpg";
-import h20 from "../Images/h20.jpg";
-import h21 from "../Images/h21.jpg";
-import h22 from "../Images/h22.jpg";
-import h23 from "../Images/h23.jpg";
-import h24 from "../Images/h24.jpg";
-import h25 from "../Images/h25.jpg";
-import h26 from "../Images/h26.jpg";
-import h27 from "../Images/h27.jpg";
-import h28 from "../Images/h28.jpg";
-import h29 from "../Images/h29.jpg";
-import h30 from "../Images/h30.jpg";
-import h31 from "../Images/h31.jpg";
-import h32 from "../Images/h32.jpg";
-import h33 from "../Images/h33.jpg";
-import h34 from "../Images/h34.jpg";
-import h35 from "../Images/h35.jpg";
-import h36 from "../Images/h36.jpg";
-import h37 from "../Images/h37.jpg";
-import h38 from "../Images/h38.jpg";
-import h39 from "../Images/h39.jpg";
-import h40 from "../Images/h40.jpg";
-
 import top_pic from "../Images/top_pic.jpg";
 import { colors } from "../Utils/colors";
 import { imgObj } from "../Utils/imageObj";
@@ -131,6 +73,7 @@ const Photography = () => {
       img62StillLoading ||
       img63StillLoading ||
       img64StillLoading ||
+      img65StillLoading ||
       img65StillLoading
     );
   };
@@ -202,11 +145,23 @@ const Photography = () => {
   const [img65StillLoading, setImg65StillLoading] = useState(true);
 
   const getImage = (width, loadingFunction, imgObjDetailed) => {
-    const { alt, img, place } = imgObjDetailed;
+    const { alt, img, place, inGrid, gridDetails, smallFontSize } =
+      imgObjDetailed;
+    const { gridColumnStart, gridColumnEnd, gridRowStart, gridRowEnd } =
+      gridDetails || {};
 
     return (
-      <StyledImage width={width} img={img}>
-        <img src={top_pic} alt={alt} onLoad={() => loadingFunction(false)} />
+      <StyledImage
+        width={width}
+        img={img}
+        inGrid={inGrid}
+        gridColumnStart={gridColumnStart}
+        gridColumnEnd={gridColumnEnd}
+        gridRowStart={gridRowStart}
+        gridRowEnd={gridRowEnd}
+        smallFontSize={smallFontSize}
+      >
+        <img src={img} alt={alt} onLoad={() => loadingFunction(false)} />
         <div className="img-text">{place}</div>
       </StyledImage>
     );
@@ -215,12 +170,13 @@ const Photography = () => {
   return (
     <div>
       {isLoading() ? <Loader /> : null}
+
       <Section>
         <StyledImage width={68} img={top_pic} style={{ margin: "0 auto" }}>
           <img
             src={top_pic}
             alt="top_pic"
-            onLoad={() => setImg42StillLoading(false)}
+            onLoad={() => setImg65StillLoading(false)}
           />
           <div className="img-text">Ugljan, Croatia</div>
         </StyledImage>
@@ -278,132 +234,16 @@ const Photography = () => {
               gridTemplateRows: "repeat(60, 10px)",
             }}
           >
-            <StyledImageInGrid img={v1}>
-              <img
-                src={v1}
-                alt="v1"
-                onLoad={() => setImg10StillLoading(false)}
-              />
-              <div className="img-text">Preikestolen, Norway</div>
-            </StyledImageInGrid>
-
-            <img
-              src={v2}
-              alt="v2"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 13,
-                gridColumnEnd: 25,
-                gridRowStart: 1,
-                gridRowEnd: 16,
-              }}
-              onLoad={() => setImg11StillLoading(false)}
-            />
-            <img
-              src={v3}
-              alt="v3"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 25,
-                gridColumnEnd: 40,
-                gridRowStart: 1,
-                gridRowEnd: 22,
-              }}
-              onLoad={() => setImg12StillLoading(false)}
-            />
-            <img
-              src={h10}
-              alt="h10"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 25,
-                gridRowStart: 16,
-                gridRowEnd: 31,
-              }}
-              onLoad={() => setImg13StillLoading(false)}
-            />
-            <img
-              src={h11}
-              alt="h11"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 25,
-                gridColumnEnd: 40,
-                gridRowStart: 22,
-                gridRowEnd: 31,
-              }}
-              onLoad={() => setImg14StillLoading(false)}
-            />
-            <img
-              src={v4}
-              alt="v4"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 13,
-                gridRowStart: 31,
-                gridRowEnd: 46,
-              }}
-              onLoad={() => setImg15StillLoading(false)}
-            />
-            <img
-              src={v5}
-              alt="v5"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 13,
-                gridColumnEnd: 25,
-                gridRowStart: 31,
-                gridRowEnd: 46,
-              }}
-              onLoad={() => setImg16StillLoading(false)}
-            />
-            <img
-              src={h12}
-              alt="h12"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 25,
-                gridColumnEnd: 40,
-                gridRowStart: 31,
-                gridRowEnd: 40,
-              }}
-              onLoad={() => setImg17StillLoading(false)}
-            />
-            <img
-              src={v6}
-              alt="v6"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 25,
-                gridColumnEnd: 40,
-                gridRowStart: 40,
-                gridRowEnd: 61,
-              }}
-              onLoad={() => setImg18StillLoading(false)}
-            />
-            <img
-              src={h13}
-              alt="h13"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 25,
-                gridRowStart: 46,
-                gridRowEnd: 61,
-              }}
-              onLoad={() => setImg19StillLoading(false)}
-            />
+            {getImage(100, setImg10StillLoading, imgObj[10])}
+            {getImage(100, setImg11StillLoading, imgObj[11])}
+            {getImage(100, setImg12StillLoading, imgObj[12])}
+            {getImage(100, setImg13StillLoading, imgObj[13])}
+            {getImage(100, setImg14StillLoading, imgObj[14])}
+            {getImage(100, setImg15StillLoading, imgObj[15])}
+            {getImage(100, setImg16StillLoading, imgObj[16])}
+            {getImage(100, setImg17StillLoading, imgObj[17])}
+            {getImage(100, setImg18StillLoading, imgObj[18])}
+            {getImage(100, setImg19StillLoading, imgObj[19])}
           </div>
         </div>
         <div
@@ -415,260 +255,55 @@ const Photography = () => {
             margin: "40px auto 40px",
             gap: "20px",
           }}
-          onLoad={() => setImg20StillLoading(false)}
         >
-          <img
-            src={v7}
-            alt="v7"
-            style={{ maxWidth: "18%" }}
-            onLoad={() => setImg21StillLoading(false)}
-          />
-          <img
-            src={v8}
-            alt="v8"
-            style={{ maxWidth: "18%" }}
-            onLoad={() => setImg22StillLoading(false)}
-          />
-          <img
-            src={v9}
-            alt="v9"
-            style={{ maxWidth: "18%" }}
-            onLoad={() => setImg23StillLoading(false)}
-          />
-
-          <img
-            src={v10}
-            alt="v10"
-            style={{ maxWidth: "18%" }}
-            onLoad={() => setImg24StillLoading(false)}
-          />
-          <img
-            src={v11}
-            alt="v11"
-            style={{ maxWidth: "18%" }}
-            onLoad={() => setImg25StillLoading(false)}
-          />
+          {getImage(18, setImg20StillLoading, imgObj[20])}
+          {getImage(18, setImg21StillLoading, imgObj[21])}
+          {getImage(18, setImg22StillLoading, imgObj[22])}
+          {getImage(18, setImg23StillLoading, imgObj[23])}
+          {getImage(18, setImg24StillLoading, imgObj[24])}
         </div>
-
         <div style={{ width: "65%", margin: "0 auto" }}>
           <div
             style={{
               display: "grid",
               gap: "15px",
               justifyContent: "center",
-              gridTemplateRows: "repeat(108, 11px)",
+              gridTemplateRows: "repeat(60, 10px)",
             }}
           >
-            <img
-              src={v12}
-              alt="v12"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 13,
-                gridRowStart: 1,
-                gridRowEnd: 16,
-              }}
-              onLoad={() => setImg26StillLoading(false)}
-            />
-            <img
-              src={v13}
-              alt="v13"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 13,
-                gridColumnEnd: 25,
-                gridRowStart: 1,
-                gridRowEnd: 16,
-              }}
-              onLoad={() => setImg27StillLoading(false)}
-            />
-            <img
-              src={v14}
-              alt="v14"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 25,
-                gridColumnEnd: 40,
-                gridRowStart: 1,
-                gridRowEnd: 21,
-              }}
-              onLoad={() => setImg28StillLoading(false)}
-            />
-            <img
-              src={h14}
-              alt="h14"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 25,
-                gridRowStart: 16,
-                gridRowEnd: 31,
-              }}
-              onLoad={() => setImg29StillLoading(false)}
-            />
-            <img
-              src={h15}
-              alt="h15"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 25,
-                gridColumnEnd: 40,
-                gridRowStart: 21,
-                gridRowEnd: 31,
-              }}
-              onLoad={() => setImg30StillLoading(false)}
-            />
-            <img
-              src={v15}
-              alt="v15"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 13,
-                gridRowStart: 31,
-                gridRowEnd: 46,
-              }}
-              onLoad={() => setImg31StillLoading(false)}
-            />
-            <img
-              src={v16}
-              alt="v16"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 13,
-                gridColumnEnd: 27,
-                gridRowStart: 31,
-                gridRowEnd: 46,
-              }}
-              onLoad={() => setImg32StillLoading(false)}
-            />
-            <img
-              src={h16}
-              alt="h16"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 27,
-                gridColumnEnd: 40,
-                gridRowStart: 31,
-                gridRowEnd: 41,
-              }}
-              onLoad={() => setImg33StillLoading(false)}
-            />
-            <img
-              src={v17}
-              alt="v17"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 27,
-                gridColumnEnd: 40,
-                gridRowStart: 41,
-                gridRowEnd: 61,
-              }}
-              onLoad={() => setImg34StillLoading(false)}
-            />
-            <img
-              src={h17}
-              alt="h17"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 27,
-                gridRowStart: 46,
-                gridRowEnd: 61,
-              }}
-              onLoad={() => setImg35StillLoading(false)}
-            />
-            <img
-              src={h18}
-              alt="h18"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 19,
-                gridRowStart: 61,
-                gridRowEnd: 72,
-              }}
-              onLoad={() => setImg36StillLoading(false)}
-            />
-            <img
-              src={h19}
-              alt="h19"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 19,
-                gridColumnEnd: 40,
-                gridRowStart: 61,
-                gridRowEnd: 74,
-              }}
-              onLoad={() => setImg37StillLoading(false)}
-            />
-            <img
-              src={h20}
-              alt="h20"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 19,
-                gridRowStart: 72,
-                gridRowEnd: 84,
-              }}
-              onLoad={() => setImg38StillLoading(false)}
-            />
-            <img
-              src={v18}
-              alt="v18"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 19,
-                gridColumnEnd: 28,
-                gridRowStart: 74,
-                gridRowEnd: 84,
-              }}
-              onLoad={() => setImg39StillLoading(false)}
-            />
-            <img
-              src={h21}
-              alt="h21"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 28,
-                gridColumnEnd: 40,
-                gridRowStart: 74,
-                gridRowEnd: 84,
-              }}
-              onLoad={() => setImg40StillLoading(false)}
-            />
-            <img
-              src={h22}
-              alt="h22"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 40,
-                gridRowStart: 84,
-                gridRowEnd: 108,
-              }}
-              onLoad={() => setImg41StillLoading(false)}
-            />
+            {getImage(100, setImg25StillLoading, imgObj[25])}
+            {getImage(100, setImg26StillLoading, imgObj[26])}
+            {getImage(100, setImg27StillLoading, imgObj[27])}
+            {getImage(100, setImg28StillLoading, imgObj[28])}
+            {getImage(100, setImg29StillLoading, imgObj[29])}
+            {getImage(100, setImg30StillLoading, imgObj[30])}
+            {getImage(100, setImg31StillLoading, imgObj[31])}
+            {getImage(100, setImg32StillLoading, imgObj[32])}
+            {getImage(100, setImg33StillLoading, imgObj[33])}
           </div>
         </div>
+        <div style={{ width: "65%", margin: "0 auto" }}>
+          <div
+            style={{
+              display: "grid",
+              gap: "15px",
+              justifyContent: "center",
+              gridTemplateRows: "repeat(60, 10px)",
+              margin: "20px auto",
+            }}
+          >
+            {getImage(100, setImg34StillLoading, imgObj[34])}
+            {getImage(100, setImg35StillLoading, imgObj[35])}
+            {getImage(100, setImg36StillLoading, imgObj[36])}
+            {getImage(100, setImg37StillLoading, imgObj[37])}
+            {getImage(100, setImg38StillLoading, imgObj[38])}
+            {getImage(100, setImg39StillLoading, imgObj[39])}
+            {getImage(100, setImg40StillLoading, imgObj[40])}
+            {getImage(100, setImg41StillLoading, imgObj[41])}
+            {getImage(100, setImg42StillLoading, imgObj[42])}
+          </div>
+        </div>
+
         <div
           style={{
             display: "flex",
@@ -679,62 +314,15 @@ const Photography = () => {
             gap: "20px",
           }}
         >
-          <img
-            src={h23}
-            alt="h23"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg43StillLoading(false)}
-          />
-          <img
-            src={h24}
-            alt="h24"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg44StillLoading(false)}
-          />
-          <img
-            src={h25}
-            alt="h25"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg45StillLoading(false)}
-          />
-
-          <img
-            src={h26}
-            alt="h26"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg46StillLoading(false)}
-          />
-          <img
-            src={h27}
-            alt="h27"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg47StillLoading(false)}
-          />
-          <img
-            src={h28}
-            alt="h28"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg48StillLoading(false)}
-          />
-
-          <img
-            src={h29}
-            alt="h29"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg49StillLoading(false)}
-          />
-          <img
-            src={h30}
-            alt="h30"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg50StillLoading(false)}
-          />
-          <img
-            src={h31}
-            alt="h31"
-            style={{ maxWidth: "26%" }}
-            onLoad={() => setImg51StillLoading(false)}
-          />
+          {getImage(26, setImg43StillLoading, imgObj[43])}
+          {getImage(26, setImg44StillLoading, imgObj[44])}
+          {getImage(26, setImg45StillLoading, imgObj[45])}
+          {getImage(26, setImg46StillLoading, imgObj[46])}
+          {getImage(26, setImg47StillLoading, imgObj[47])}
+          {getImage(26, setImg48StillLoading, imgObj[48])}
+          {getImage(26, setImg49StillLoading, imgObj[49])}
+          {getImage(26, setImg50StillLoading, imgObj[50])}
+          {getImage(26, setImg51StillLoading, imgObj[51])}
         </div>
         <div style={{ width: "65%", margin: "0 auto" }}>
           <div
@@ -745,188 +333,20 @@ const Photography = () => {
               gridTemplateRows: "repeat(120, 10px)",
             }}
           >
-            <img
-              src={v19}
-              alt="v1"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 13,
-                gridRowStart: 1,
-                gridRowEnd: 18,
-              }}
-              onLoad={() => setImg52StillLoading(false)}
-            />
-            <img
-              src={v20}
-              alt="v20"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 13,
-                gridColumnEnd: 25,
-                gridRowStart: 1,
-                gridRowEnd: 18,
-              }}
-              onLoad={() => setImg53StillLoading(false)}
-            />
-            <img
-              src={v21}
-              alt="v21"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 25,
-                gridColumnEnd: 40,
-                gridRowStart: 1,
-                gridRowEnd: 24,
-              }}
-              onLoad={() => setImg54StillLoading(false)}
-            />
-            <img
-              src={h32}
-              alt="h32"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 25,
-                gridRowStart: 18,
-                gridRowEnd: 33,
-              }}
-              onLoad={() => setImg55StillLoading(false)}
-            />
-            <img
-              src={h33}
-              alt="h33"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 25,
-                gridColumnEnd: 40,
-                gridRowStart: 24,
-                gridRowEnd: 33,
-              }}
-              onLoad={() => setImg56StillLoading(false)}
-            />
-            <img
-              src={h34}
-              alt="h34"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 25,
-                gridRowStart: 33,
-                gridRowEnd: 48,
-              }}
-              onLoad={() => setImg57StillLoading(false)}
-            />
-            <img
-              src={h35}
-              alt="h35"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 25,
-                gridColumnEnd: 40,
-                gridRowStart: 33,
-                gridRowEnd: 42,
-              }}
-              onLoad={() => setImg58StillLoading(false)}
-            />
-            <img
-              src={v22}
-              alt="v22"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 25,
-                gridColumnEnd: 40,
-                gridRowStart: 42,
-                gridRowEnd: 63,
-              }}
-              onLoad={() => setImg59StillLoading(false)}
-            />
-            <img
-              src={h36}
-              alt="h36"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 25,
-                gridRowStart: 48,
-                gridRowEnd: 63,
-              }}
-              onLoad={() => setImg60StillLoading(false)}
-            />
-            <img
-              src={h37}
-              alt="h37"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 25,
-                gridRowStart: 63,
-                gridRowEnd: 78,
-              }}
-              onLoad={() => setImg61StillLoading(false)}
-            />
-            <img
-              src={h38}
-              alt="h38"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 25,
-                gridColumnEnd: 40,
-                gridRowStart: 63,
-                gridRowEnd: 74,
-              }}
-              onLoad={() => setImg62StillLoading(false)}
-            />
-            <img
-              src={v23}
-              alt="v23"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 25,
-                gridColumnEnd: 40,
-                gridRowStart: 74,
-                gridRowEnd: 95,
-              }}
-              onLoad={() => setImg63StillLoading(false)}
-            />
-            <img
-              src={h39}
-              alt="h39"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 25,
-                gridRowStart: 78,
-                gridRowEnd: 95,
-              }}
-              onLoad={() => setImg64StillLoading(false)}
-            />
-            <img
-              src={h40}
-              alt="h40"
-              style={{
-                width: "100%",
-                height: "100%",
-                gridColumnStart: 1,
-                gridColumnEnd: 40,
-                gridRowStart: 95,
-                gridRowEnd: 120,
-              }}
-              onLoad={() => setImg65StillLoading(false)}
-            />
+            {getImage(100, setImg52StillLoading, imgObj[52])}
+            {getImage(100, setImg53StillLoading, imgObj[53])}
+            {getImage(100, setImg54StillLoading, imgObj[54])}
+            {getImage(100, setImg55StillLoading, imgObj[55])}
+            {getImage(100, setImg56StillLoading, imgObj[56])}
+            {getImage(100, setImg57StillLoading, imgObj[57])}
+            {getImage(100, setImg58StillLoading, imgObj[58])}
+            {getImage(100, setImg59StillLoading, imgObj[59])}
+            {getImage(100, setImg60StillLoading, imgObj[60])}
+            {getImage(100, setImg61StillLoading, imgObj[61])}
+            {getImage(100, setImg62StillLoading, imgObj[62])}
+            {getImage(100, setImg63StillLoading, imgObj[63])}
+            {getImage(100, setImg64StillLoading, imgObj[64])}
+            {getImage(100, setImg65StillLoading, imgObj[65])}
           </div>
         </div>
       </Section>
@@ -944,54 +364,13 @@ const StyledImage = styled.div`
   position: relative;
   max-width: ${(props) => `${props.width}%`};
 
-  & img {
-    width: 100%;
-  }
-
-  &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-image: url(${(props) => props.img});
-    transition: 0.5s;
-    background-size: cover;
-  }
-
-  &:hover {
-    .img-text {
-      visibility: visible;
-      opacity: 1;
-    }
-
-    &:before {
-      filter: brightness(35%);
-    }
-  }
-
-  .img-text {
-    white-space: nowrap;
-    position: absolute;
-    font-size: 16px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: visibility 0s, opacity 0.25s linear;
-    transition: visibility 0s, opacity 0.25s linear;
-  }
-`;
-
-const StyledImageInGrid = styled.div`
-  position: relative;
-  grid-column-start: 1;
-  grid-column-end: 13;
-  grid-row-start: 1;
-  grid-row-end: 16;
+  grid-column-start: ${(props) =>
+    props.gridColumnStart ? props.gridColumnStart : "none"};
+  grid-column-end: ${(props) =>
+    props.gridColumnEnd ? props.gridColumnEnd : "none"};
+  grid-row-start: ${(props) =>
+    props.gridRowStart ? props.gridRowStart : "none"};
+  grid-row-end: ${(props) => (props.gridColumnEnd ? props.gridRowEnd : "none")};
 
   & img {
     width: 100%;
@@ -1024,7 +403,7 @@ const StyledImageInGrid = styled.div`
   .img-text {
     white-space: nowrap;
     position: absolute;
-    font-size: 16px;
+    font-size: ${(props) => (props.smallFontSize ? "12px" : "16px")};
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

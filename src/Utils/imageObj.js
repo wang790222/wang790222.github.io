@@ -564,7 +564,7 @@ export const imgObj = {
       gridColumnStart: 1,
       gridColumnEnd: 25,
       gridRowStart: 18,
-      gridRowEnd: 33,
+      gridRowEnd: 35,
     },
   },
   56: {
@@ -576,7 +576,7 @@ export const imgObj = {
       gridColumnStart: 25,
       gridColumnEnd: 40,
       gridRowStart: 24,
-      gridRowEnd: 33,
+      gridRowEnd: 35,
     },
   },
   57: {
@@ -587,8 +587,8 @@ export const imgObj = {
     gridDetails: {
       gridColumnStart: 1,
       gridColumnEnd: 25,
-      gridRowStart: 33,
-      gridRowEnd: 48,
+      gridRowStart: 35,
+      gridRowEnd: 50,
     },
   },
   58: {
@@ -599,8 +599,8 @@ export const imgObj = {
     gridDetails: {
       gridColumnStart: 25,
       gridColumnEnd: 40,
-      gridRowStart: 33,
-      gridRowEnd: 42,
+      gridRowStart: 35,
+      gridRowEnd: 47,
     },
   },
   59: {
@@ -611,8 +611,8 @@ export const imgObj = {
     gridDetails: {
       gridColumnStart: 25,
       gridColumnEnd: 40,
-      gridRowStart: 42,
-      gridRowEnd: 63,
+      gridRowStart: 47,
+      gridRowEnd: 74,
     },
   },
   60: {
@@ -623,8 +623,8 @@ export const imgObj = {
     gridDetails: {
       gridColumnStart: 1,
       gridColumnEnd: 25,
-      gridRowStart: 48,
-      gridRowEnd: 63,
+      gridRowStart: 50,
+      gridRowEnd: 67,
     },
   },
   61: {
@@ -635,8 +635,8 @@ export const imgObj = {
     gridDetails: {
       gridColumnStart: 1,
       gridColumnEnd: 25,
-      gridRowStart: 63,
-      gridRowEnd: 78,
+      gridRowStart: 67,
+      gridRowEnd: 82,
     },
   },
   62: {
@@ -660,7 +660,7 @@ export const imgObj = {
       gridColumnStart: 25,
       gridColumnEnd: 40,
       gridRowStart: 74,
-      gridRowEnd: 95,
+      gridRowEnd: 98,
     },
   },
   64: {
@@ -671,8 +671,8 @@ export const imgObj = {
     gridDetails: {
       gridColumnStart: 1,
       gridColumnEnd: 25,
-      gridRowStart: 78,
-      gridRowEnd: 95,
+      gridRowStart: 82,
+      gridRowEnd: 98,
     },
   },
   65: {
@@ -683,8 +683,8 @@ export const imgObj = {
     gridDetails: {
       gridColumnStart: 1,
       gridColumnEnd: 40,
-      gridRowStart: 95,
-      gridRowEnd: 120,
+      gridRowStart: 98,
+      gridRowEnd: 122,
     },
   },
 };

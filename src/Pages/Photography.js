@@ -70,7 +70,6 @@ const Photography = () => {
       img59StillLoading ||
       img60StillLoading ||
       img61StillLoading ||
-      img62StillLoading ||
       img63StillLoading ||
       img64StillLoading ||
       img65StillLoading ||
@@ -139,7 +138,6 @@ const Photography = () => {
   const [img59StillLoading, setImg59StillLoading] = useState(true);
   const [img60StillLoading, setImg60StillLoading] = useState(true);
   const [img61StillLoading, setImg61StillLoading] = useState(true);
-  const [img62StillLoading, setImg62StillLoading] = useState(true);
   const [img63StillLoading, setImg63StillLoading] = useState(true);
   const [img64StillLoading, setImg64StillLoading] = useState(true);
   const [img65StillLoading, setImg65StillLoading] = useState(true);
@@ -225,7 +223,7 @@ const Photography = () => {
             to Canada and I won't stop exploring this beautiful world.
           </p>
         </div>
-        <div style={{ width: "65%", margin: "0 auto" }}>
+        <div style={{ width: "900px", margin: "0 auto" }}>
           <div
             style={{
               display: "grid",
@@ -262,7 +260,7 @@ const Photography = () => {
           {getImage(18, setImg23StillLoading, imgObj[23])}
           {getImage(18, setImg24StillLoading, imgObj[24])}
         </div>
-        <div style={{ width: "65%", margin: "0 auto" }}>
+        <div style={{ width: "900px", margin: "0 auto" }}>
           <div
             style={{
               display: "grid",
@@ -282,7 +280,7 @@ const Photography = () => {
             {getImage(100, setImg33StillLoading, imgObj[33])}
           </div>
         </div>
-        <div style={{ width: "65%", margin: "0 auto" }}>
+        <div style={{ width: "900px", margin: "0 auto" }}>
           <div
             style={{
               display: "grid",
@@ -292,7 +290,6 @@ const Photography = () => {
               margin: "20px auto",
             }}
           >
-            {getImage(100, setImg34StillLoading, imgObj[34])}
             {getImage(100, setImg35StillLoading, imgObj[35])}
             {getImage(100, setImg36StillLoading, imgObj[36])}
             {getImage(100, setImg37StillLoading, imgObj[37])}
@@ -303,14 +300,21 @@ const Photography = () => {
             {getImage(100, setImg42StillLoading, imgObj[42])}
           </div>
         </div>
-
+        <FullSpanImg img={imgObj[34].img}>
+          <img
+            src={imgObj[34].img}
+            alt={imgObj[34].alt}
+            onLoad={() => setImg34StillLoading(false)}
+          />
+          <div className="img-text">{imgObj[34].place}</div>
+        </FullSpanImg>
         <div
           style={{
             display: "flex",
             width: "80%",
             justifyContent: "center",
             flexWrap: "wrap",
-            margin: "0px auto 20px",
+            margin: "20px auto 20px",
             gap: "20px",
           }}
         >
@@ -324,7 +328,7 @@ const Photography = () => {
           {getImage(26, setImg50StillLoading, imgObj[50])}
           {getImage(26, setImg51StillLoading, imgObj[51])}
         </div>
-        <div style={{ width: "65%", margin: "0 auto" }}>
+        <div style={{ width: "1080px", margin: "0 auto" }}>
           <div
             style={{
               display: "grid",
@@ -343,7 +347,6 @@ const Photography = () => {
             {getImage(100, setImg59StillLoading, imgObj[59])}
             {getImage(100, setImg60StillLoading, imgObj[60])}
             {getImage(100, setImg61StillLoading, imgObj[61])}
-            {getImage(100, setImg62StillLoading, imgObj[62])}
             {getImage(100, setImg63StillLoading, imgObj[63])}
             {getImage(100, setImg64StillLoading, imgObj[64])}
             {getImage(100, setImg65StillLoading, imgObj[65])}
@@ -371,6 +374,54 @@ const StyledImage = styled.div`
   grid-row-start: ${(props) =>
     props.gridRowStart ? props.gridRowStart : "none"};
   grid-row-end: ${(props) => (props.gridColumnEnd ? props.gridRowEnd : "none")};
+
+  & img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(${(props) => props.img});
+    transition: 0.5s;
+    background-size: cover;
+  }
+
+  &:hover {
+    .img-text {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &:before {
+      filter: brightness(35%);
+    }
+  }
+
+  .img-text {
+    white-space: nowrap;
+    position: absolute;
+    font-size: ${(props) => (props.smallFontSize ? "12px" : "16px")};
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0s, opacity 0.25s linear;
+    transition: visibility 0s, opacity 0.25s linear;
+  }
+`;
+
+const FullSpanImg = styled.div`
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
 
   & img {
     width: 100%;

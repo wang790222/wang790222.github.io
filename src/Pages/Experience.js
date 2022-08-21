@@ -212,11 +212,13 @@ const Experience = () => {
           fontSize: "22px",
           fontWeight: "bold",
           lineHeight: "16px",
-          cursor: "pointer",
+          cursor: isFront ? "pointer" : "default",
           padding: "3px",
           width: "60px",
         }}
         onClick={(e) => {
+          if (!isFront) return;
+
           e.stopPropagation();
 
           setShowDetail(!showDetail);

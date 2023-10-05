@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.aabafaff.css","mappings":"AAAA,EAGE,QAAS,CAIT,iCAAqC,CAFrC,cAAe,CAJf,QAAS,CAGT,SAAU,CAFV,SAAU,CAIV,sBAEF","sources":["index.css"],"sourcesContent":["* {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  outline: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  font-family: 'Montserrat', sans-serif;\n}"],"names":[],"sourceRoot":""}

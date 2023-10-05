@@ -1,30 +1,15 @@
 import React from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import { useState } from "react";
 import styled from "styled-components";
+import email from "../Images/email.png";
+import linkedin from "../Images/linkedin.png";
 
 import { colors } from "../Utils/colors";
 
 const Header = (props) => {
-  const location = useLocation();
-  return (
-    <Section>
-      <Name>Eddie Wang</Name>
-      <StyledUl>
-        <StyledLi isActive={location.pathname.split("/")[1] === ""}>
-          <StyledLink to="/">About</StyledLink>
-        </StyledLi>
-        <StyledLi isActive={location.pathname.split("/")[1] === "experience"}>
-          <StyledLink to="/experience">Experience</StyledLink>
-        </StyledLi>
-        <StyledLi isActive={location.pathname.split("/")[1] === "projects"}>
-          <StyledLink to="/projects">Projects</StyledLink>
-        </StyledLi>
-        <StyledLi isActive={location.pathname.split("/")[1] === "photography"}>
-          <StyledLink to="/photography">Photography</StyledLink>
-        </StyledLi>
-      </StyledUl>
-    </Section>
-  );
+  const [url, setUrl] = useState("about");
+
+  return <Section></Section>;
 };
 
 export default Header;
@@ -65,7 +50,7 @@ const Name = styled.h1`
   color: ${colors.slateGray};
 `;
 
-const StyledLink = styled(NavLink)`
+const StyledLink = styled.a`
   text-decoration: none;
   color: ${colors.slateGray};
 `;

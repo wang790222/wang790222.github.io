@@ -168,200 +168,194 @@ const Photography = () => {
   return (
     <div>
       {isLoading() ? <Loader /> : null}
-
-      <Section>
-        <StyledImage width={68} img={top_pic} style={{ margin: "0 auto" }}>
-          <img
-            src={top_pic}
-            alt="top_pic"
-            onLoad={() => setImg65StillLoading(false)}
-          />
-          <div className="img-text">Ugljan, Croatia</div>
-        </StyledImage>
+      <Title>Photography</Title>={" "}
+      <StyledImage width={68} img={top_pic} style={{ margin: "0 auto" }}>
+        <img
+          src={top_pic}
+          alt="top_pic"
+          onLoad={() => setImg65StillLoading(false)}
+        />
+        <div className="img-text">Ugljan, Croatia</div>
+      </StyledImage>
+      <div
+        style={{
+          display: "flex",
+          width: "80%",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          margin: "40px auto 20px",
+          gap: "20px",
+        }}
+      >
+        {getImage(26, setImg1StillLoading, imgObj[1])}
+        {getImage(26, setImg2StillLoading, imgObj[2])}
+        {getImage(26, setImg3StillLoading, imgObj[3])}
+        {getImage(26, setImg4StillLoading, imgObj[4])}
+        {getImage(26, setImg5StillLoading, imgObj[5])}
+        {getImage(26, setImg6StillLoading, imgObj[6])}
+        {getImage(26, setImg7StillLoading, imgObj[7])}
+        {getImage(26, setImg8StillLoading, imgObj[8])}
+        {getImage(26, setImg9StillLoading, imgObj[9])}
+      </div>
+      <div
+        style={{
+          backgroundColor: colors.lightGreyish,
+          width: "70%",
+          margin: "2rem auto",
+          borderRadius: "8px",
+          background: `linear-gradient(135deg, transparent 15px, ${colors.lightGreyish} 0) top left, linear-gradient(-45deg, transparent 15px, ${colors.lightGreyish} 0) bottom right`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "50%",
+          textAlign: "center",
+        }}
+      >
+        <p
+          style={{
+            maxWidth: "55rem",
+            margin: "0 auto",
+            padding: "2rem",
+            lineHeight: "24px",
+          }}
+        >
+          I was born and grew up in Asia. I am lucky and blessed to have the
+          opportunity to live and travel some countries. Now I have immegrated
+          to Canada and I won't stop exploring this beautiful world.
+        </p>
+      </div>
+      <div style={{ width: "900px", margin: "0 auto" }}>
         <div
           style={{
-            display: "flex",
-            width: "80%",
+            display: "grid",
+            gap: "15px",
             justifyContent: "center",
-            flexWrap: "wrap",
-            margin: "40px auto 20px",
-            gap: "20px",
+            gridTemplateRows: "repeat(60, 10px)",
           }}
         >
-          {getImage(26, setImg1StillLoading, imgObj[1])}
-          {getImage(26, setImg2StillLoading, imgObj[2])}
-          {getImage(26, setImg3StillLoading, imgObj[3])}
-          {getImage(26, setImg4StillLoading, imgObj[4])}
-          {getImage(26, setImg5StillLoading, imgObj[5])}
-          {getImage(26, setImg6StillLoading, imgObj[6])}
-          {getImage(26, setImg7StillLoading, imgObj[7])}
-          {getImage(26, setImg8StillLoading, imgObj[8])}
-          {getImage(26, setImg9StillLoading, imgObj[9])}
+          {getImage(100, setImg10StillLoading, imgObj[10])}
+          {getImage(100, setImg11StillLoading, imgObj[11])}
+          {getImage(100, setImg12StillLoading, imgObj[12])}
+          {getImage(100, setImg13StillLoading, imgObj[13])}
+          {getImage(100, setImg14StillLoading, imgObj[14])}
+          {getImage(100, setImg15StillLoading, imgObj[15])}
+          {getImage(100, setImg16StillLoading, imgObj[16])}
+          {getImage(100, setImg17StillLoading, imgObj[17])}
+          {getImage(100, setImg18StillLoading, imgObj[18])}
+          {getImage(100, setImg19StillLoading, imgObj[19])}
         </div>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          width: "935px",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          margin: "40px auto 40px",
+          gap: "20px",
+        }}
+      >
+        {getImage(18, setImg20StillLoading, imgObj[20])}
+        {getImage(18, setImg21StillLoading, imgObj[21])}
+        {getImage(18, setImg22StillLoading, imgObj[22])}
+        {getImage(18, setImg23StillLoading, imgObj[23])}
+        {getImage(18, setImg24StillLoading, imgObj[24])}
+      </div>
+      <div style={{ width: "900px", margin: "0 auto" }}>
         <div
           style={{
-            backgroundColor: colors.lightGreyish,
-            width: "70%",
-            margin: "2rem auto",
-            borderRadius: "8px",
-            background: `linear-gradient(135deg, transparent 15px, ${colors.lightGreyish} 0) top left, linear-gradient(-45deg, transparent 15px, ${colors.lightGreyish} 0) bottom right`,
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "50%",
-            textAlign: "center",
-          }}
-        >
-          <p
-            style={{
-              maxWidth: "55rem",
-              margin: "0 auto",
-              padding: "2rem",
-              lineHeight: "24px",
-            }}
-          >
-            I was born and grew up in Asia. I am lucky and blessed to have the
-            opportunity to live and travel some countries. Now I have immegrated
-            to Canada and I won't stop exploring this beautiful world.
-          </p>
-        </div>
-        <div style={{ width: "900px", margin: "0 auto" }}>
-          <div
-            style={{
-              display: "grid",
-              gap: "15px",
-              justifyContent: "center",
-              gridTemplateRows: "repeat(60, 10px)",
-            }}
-          >
-            {getImage(100, setImg10StillLoading, imgObj[10])}
-            {getImage(100, setImg11StillLoading, imgObj[11])}
-            {getImage(100, setImg12StillLoading, imgObj[12])}
-            {getImage(100, setImg13StillLoading, imgObj[13])}
-            {getImage(100, setImg14StillLoading, imgObj[14])}
-            {getImage(100, setImg15StillLoading, imgObj[15])}
-            {getImage(100, setImg16StillLoading, imgObj[16])}
-            {getImage(100, setImg17StillLoading, imgObj[17])}
-            {getImage(100, setImg18StillLoading, imgObj[18])}
-            {getImage(100, setImg19StillLoading, imgObj[19])}
-          </div>
-        </div>
-        <div
-          style={{
-            display: "flex",
-            width: "935px",
+            display: "grid",
+            gap: "15px",
             justifyContent: "center",
-            flexWrap: "wrap",
-            margin: "40px auto 40px",
-            gap: "20px",
+            gridTemplateRows: "repeat(60, 10px)",
           }}
         >
-          {getImage(18, setImg20StillLoading, imgObj[20])}
-          {getImage(18, setImg21StillLoading, imgObj[21])}
-          {getImage(18, setImg22StillLoading, imgObj[22])}
-          {getImage(18, setImg23StillLoading, imgObj[23])}
-          {getImage(18, setImg24StillLoading, imgObj[24])}
+          {getImage(100, setImg25StillLoading, imgObj[25])}
+          {getImage(100, setImg26StillLoading, imgObj[26])}
+          {getImage(100, setImg27StillLoading, imgObj[27])}
+          {getImage(100, setImg28StillLoading, imgObj[28])}
+          {getImage(100, setImg29StillLoading, imgObj[29])}
+          {getImage(100, setImg30StillLoading, imgObj[30])}
+          {getImage(100, setImg31StillLoading, imgObj[31])}
+          {getImage(100, setImg32StillLoading, imgObj[32])}
+          {getImage(100, setImg33StillLoading, imgObj[33])}
         </div>
-        <div style={{ width: "900px", margin: "0 auto" }}>
-          <div
-            style={{
-              display: "grid",
-              gap: "15px",
-              justifyContent: "center",
-              gridTemplateRows: "repeat(60, 10px)",
-            }}
-          >
-            {getImage(100, setImg25StillLoading, imgObj[25])}
-            {getImage(100, setImg26StillLoading, imgObj[26])}
-            {getImage(100, setImg27StillLoading, imgObj[27])}
-            {getImage(100, setImg28StillLoading, imgObj[28])}
-            {getImage(100, setImg29StillLoading, imgObj[29])}
-            {getImage(100, setImg30StillLoading, imgObj[30])}
-            {getImage(100, setImg31StillLoading, imgObj[31])}
-            {getImage(100, setImg32StillLoading, imgObj[32])}
-            {getImage(100, setImg33StillLoading, imgObj[33])}
-          </div>
-        </div>
-        <div style={{ width: "900px", margin: "0 auto" }}>
-          <div
-            style={{
-              display: "grid",
-              gap: "15px",
-              justifyContent: "center",
-              gridTemplateRows: "repeat(60, 10px)",
-              margin: "20px auto",
-            }}
-          >
-            {getImage(100, setImg35StillLoading, imgObj[35])}
-            {getImage(100, setImg36StillLoading, imgObj[36])}
-            {getImage(100, setImg37StillLoading, imgObj[37])}
-            {getImage(100, setImg38StillLoading, imgObj[38])}
-            {getImage(100, setImg39StillLoading, imgObj[39])}
-            {getImage(100, setImg40StillLoading, imgObj[40])}
-            {getImage(100, setImg41StillLoading, imgObj[41])}
-            {getImage(100, setImg42StillLoading, imgObj[42])}
-          </div>
-        </div>
-        <FullSpanImg img={imgObj[34].img}>
-          <img
-            src={imgObj[34].img}
-            alt={imgObj[34].alt}
-            onLoad={() => setImg34StillLoading(false)}
-          />
-          <div className="img-text">{imgObj[34].place}</div>
-        </FullSpanImg>
+      </div>
+      <div style={{ width: "900px", margin: "0 auto" }}>
         <div
           style={{
-            display: "flex",
-            width: "80%",
+            display: "grid",
+            gap: "15px",
             justifyContent: "center",
-            flexWrap: "wrap",
-            margin: "20px auto 20px",
-            gap: "20px",
+            gridTemplateRows: "repeat(60, 10px)",
+            margin: "20px auto",
           }}
         >
-          {getImage(26, setImg43StillLoading, imgObj[43])}
-          {getImage(26, setImg44StillLoading, imgObj[44])}
-          {getImage(26, setImg45StillLoading, imgObj[45])}
-          {getImage(26, setImg46StillLoading, imgObj[46])}
-          {getImage(26, setImg47StillLoading, imgObj[47])}
-          {getImage(26, setImg48StillLoading, imgObj[48])}
-          {getImage(26, setImg49StillLoading, imgObj[49])}
-          {getImage(26, setImg50StillLoading, imgObj[50])}
-          {getImage(26, setImg51StillLoading, imgObj[51])}
+          {getImage(100, setImg35StillLoading, imgObj[35])}
+          {getImage(100, setImg36StillLoading, imgObj[36])}
+          {getImage(100, setImg37StillLoading, imgObj[37])}
+          {getImage(100, setImg38StillLoading, imgObj[38])}
+          {getImage(100, setImg39StillLoading, imgObj[39])}
+          {getImage(100, setImg40StillLoading, imgObj[40])}
+          {getImage(100, setImg41StillLoading, imgObj[41])}
+          {getImage(100, setImg42StillLoading, imgObj[42])}
         </div>
-        <div style={{ width: "1080px", margin: "0 auto" }}>
-          <div
-            style={{
-              display: "grid",
-              gap: "15px",
-              justifyContent: "center",
-              gridTemplateRows: "repeat(120, 10px)",
-            }}
-          >
-            {getImage(100, setImg52StillLoading, imgObj[52])}
-            {getImage(100, setImg53StillLoading, imgObj[53])}
-            {getImage(100, setImg54StillLoading, imgObj[54])}
-            {getImage(100, setImg55StillLoading, imgObj[55])}
-            {getImage(100, setImg56StillLoading, imgObj[56])}
-            {getImage(100, setImg57StillLoading, imgObj[57])}
-            {getImage(100, setImg58StillLoading, imgObj[58])}
-            {getImage(100, setImg59StillLoading, imgObj[59])}
-            {getImage(100, setImg60StillLoading, imgObj[60])}
-            {getImage(100, setImg61StillLoading, imgObj[61])}
-            {getImage(100, setImg63StillLoading, imgObj[63])}
-            {getImage(100, setImg64StillLoading, imgObj[64])}
-            {getImage(100, setImg65StillLoading, imgObj[65])}
-          </div>
+      </div>
+      <FullSpanImg img={imgObj[34].img}>
+        <img
+          src={imgObj[34].img}
+          alt={imgObj[34].alt}
+          onLoad={() => setImg34StillLoading(false)}
+        />
+        <div className="img-text">{imgObj[34].place}</div>
+      </FullSpanImg>
+      <div
+        style={{
+          display: "flex",
+          width: "80%",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          margin: "20px auto 20px",
+          gap: "20px",
+        }}
+      >
+        {getImage(26, setImg43StillLoading, imgObj[43])}
+        {getImage(26, setImg44StillLoading, imgObj[44])}
+        {getImage(26, setImg45StillLoading, imgObj[45])}
+        {getImage(26, setImg46StillLoading, imgObj[46])}
+        {getImage(26, setImg47StillLoading, imgObj[47])}
+        {getImage(26, setImg48StillLoading, imgObj[48])}
+        {getImage(26, setImg49StillLoading, imgObj[49])}
+        {getImage(26, setImg50StillLoading, imgObj[50])}
+        {getImage(26, setImg51StillLoading, imgObj[51])}
+      </div>
+      <div style={{ width: "1080px", margin: "0 auto" }}>
+        <div
+          style={{
+            display: "grid",
+            gap: "15px",
+            justifyContent: "center",
+            gridTemplateRows: "repeat(120, 10px)",
+          }}
+        >
+          {getImage(100, setImg52StillLoading, imgObj[52])}
+          {getImage(100, setImg53StillLoading, imgObj[53])}
+          {getImage(100, setImg54StillLoading, imgObj[54])}
+          {getImage(100, setImg55StillLoading, imgObj[55])}
+          {getImage(100, setImg56StillLoading, imgObj[56])}
+          {getImage(100, setImg57StillLoading, imgObj[57])}
+          {getImage(100, setImg58StillLoading, imgObj[58])}
+          {getImage(100, setImg59StillLoading, imgObj[59])}
+          {getImage(100, setImg60StillLoading, imgObj[60])}
+          {getImage(100, setImg61StillLoading, imgObj[61])}
+          {getImage(100, setImg63StillLoading, imgObj[63])}
+          {getImage(100, setImg64StillLoading, imgObj[64])}
+          {getImage(100, setImg65StillLoading, imgObj[65])}
         </div>
-      </Section>
+      </div>
     </div>
   );
 };
 
 export default Photography;
-
-const Section = styled.div`
-  margin-top: 165px;
-`;
 
 const StyledImage = styled.div`
   position: relative;
@@ -464,4 +458,11 @@ const FullSpanImg = styled.div`
     -webkit-transition: visibility 0s, opacity 0.25s linear;
     transition: visibility 0s, opacity 0.25s linear;
   }
+`;
+
+const Title = styled.div`
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem auto;
 `;

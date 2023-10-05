@@ -100,10 +100,6 @@ const Experience = () => {
     );
   };
 
-  useEffect(() => {
-    section.current.focus();
-  }, []);
-
   const isLoading = () => {
     return (
       img1StillLoading ||
@@ -306,6 +302,7 @@ const Experience = () => {
   return (
     <div>
       {isLoading() ? <Loader /> : null}
+      <Title>Experience</Title>
 
       <ExperienceSection
         ref={section}
@@ -455,11 +452,17 @@ const Experience = () => {
 
 export default Experience;
 
+const Title = styled.div`
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+`;
+
 const ExperienceSection = styled.div`
   width: 100%;
   min-height: 30rem;
   position: relative;
-  margin-top: 120px;
 `;
 
 const Slides = styled.div`

@@ -12,7 +12,6 @@ function App() {
     <Mobile />
   ) : (
     <WhiteInnerFrame>
-      <Header />
       <Content />
       <Footer />
     </WhiteInnerFrame>
@@ -25,6 +24,4 @@ const WhiteInnerFrame = styled.div`
   border-radius: 3px;
   background-color: ${colors.white};
   position: relative;
-  display: flex;
-  flex-direction: column;
 `;

@@ -30,6 +30,7 @@ const Projects = () => {
   return (
     <div>
       {isLoading() ? <Loader /> : null}
+      <Title>Projects</Title>
       <Section>
         <div
           style={{
@@ -181,11 +182,18 @@ const Section = styled.div`
   height: 100%;
   gap: 2rem;
   color: ${colors.black};
-  margin-top: 160px;
+  font-size: 18px;
 `;
 
 const StyledImg = styled.img`
   &:hover {
     transform: scale(1.1) !important;
   }
+`;
+
+const Title = styled.div`
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  margin: 2rem auto;
 `;

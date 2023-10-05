@@ -7,3 +7,12 @@
   vertical-align: baseline;
   font-family: 'Montserrat', sans-serif;
 }
+
+html {
+	scroll-behavior: smooth;
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+}

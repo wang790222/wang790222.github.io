@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Footer = () => <StyledFooter>&#169; 2022</StyledFooter>;
+const Footer = () => <StyledFooter>&#169; 2023</StyledFooter>;
 
 export default Footer;
 

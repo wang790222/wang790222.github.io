@@ -284,12 +284,24 @@ const Experience = () => {
             <h3>2022 May - Present</h3>
             <ul>
               <li style={{ marginLeft: "2rem" }}>
-                Developing JavaScript-based applications for PlayStation gaming
-                consoles and future flagship Sony devices and services
+                Developed JavaScript-based applications for PlayStation gaming
+                consoles
               </li>
               <li style={{ marginLeft: "2rem" }}>
-                Building digital commerce solutions for PlayStation games, media
+                Built digital commerce solutions for PlayStation games, media
                 content, and subscription services
+              </li>
+              <li style={{ marginLeft: "2rem" }}>
+                Implemented features currently running on PlayStation 4 and
+                PlayStation 5 platform, accessed daily by a large gamer base
+              </li>
+              <li style={{ marginLeft: "2rem" }}>
+                Optimized front-end code to improve performance and reduce
+                company expenses
+              </li>
+              <li style={{ marginLeft: "2rem" }}>
+                Designed and wrote unit and automated tests for PlayStation 4
+                features
               </li>
             </ul>
           </div>

@@ -179,26 +179,6 @@ const Photography = () => {
       </StyledImage>
       <div
         style={{
-          display: "flex",
-          width: "80%",
-          justifyContent: "center",
-          flexWrap: "wrap",
-          margin: "40px auto 20px",
-          gap: "20px",
-        }}
-      >
-        {getImage(26, setImg1StillLoading, imgObj[1])}
-        {getImage(26, setImg2StillLoading, imgObj[2])}
-        {getImage(26, setImg3StillLoading, imgObj[3])}
-        {getImage(26, setImg4StillLoading, imgObj[4])}
-        {getImage(26, setImg5StillLoading, imgObj[5])}
-        {getImage(26, setImg6StillLoading, imgObj[6])}
-        {getImage(26, setImg7StillLoading, imgObj[7])}
-        {getImage(26, setImg8StillLoading, imgObj[8])}
-        {getImage(26, setImg9StillLoading, imgObj[9])}
-      </div>
-      <div
-        style={{
           backgroundColor: colors.lightGreyish,
           width: "70%",
           margin: "2rem auto",
@@ -217,10 +197,30 @@ const Photography = () => {
             lineHeight: "24px",
           }}
         >
-          I was born and grew up in Asia. I am lucky and blessed to have the
-          opportunity to live and travel some countries. Now I have immegrated
-          to Canada and I won't stop exploring this beautiful world.
+          I was born and grew up in Asia. I am lucky and blessed to have had the
+          opportunity to live in and travel to several countries. Now, I have
+          immigrated to Canada, and I won't stop exploring this beautiful world.
         </p>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          width: "80%",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          margin: "40px auto 20px",
+          gap: "20px",
+        }}
+      >
+        {getImage(26, setImg1StillLoading, imgObj[1])}
+        {getImage(26, setImg2StillLoading, imgObj[2])}
+        {getImage(26, setImg3StillLoading, imgObj[3])}
+        {getImage(26, setImg4StillLoading, imgObj[4])}
+        {getImage(26, setImg5StillLoading, imgObj[5])}
+        {getImage(26, setImg6StillLoading, imgObj[6])}
+        {getImage(26, setImg7StillLoading, imgObj[7])}
+        {getImage(26, setImg8StillLoading, imgObj[8])}
+        {getImage(26, setImg9StillLoading, imgObj[9])}
       </div>
       <div style={{ width: "900px", margin: "0 auto" }}>
         <div
